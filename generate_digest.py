@@ -31,16 +31,64 @@ import fetch_ola
 # Add or remove phrases here to tune what gets filtered out.
 
 BLOCKLIST = [
-    # Species-at-risk documents
-    "recovery strategy",
-    "management plan for",
-    # Technical feed / drug / chemical regulations
-    "feed ingredient",
-    "livestock feed",
-    "veterinary drug",
-    "maximum residue limit",
-    "residue limit",
-    "pest control product",
+    # ── Species at risk ───────────────────────────────────────────────────────
+    "recovery strategy",              # Recovery Strategy for the Wolverine...
+    "management plan for",            # Management Plan for the Grizzly Bear...
+    "action plan for the",            # Action Plan for the Woodland Caribou...
+    "critical habitat for",           # Critical Habitat Order for the...
+    "proposed listing",               # Species listing decisions under SARA
+    "cosewic",                        # Committee on the Status of Endangered Wildlife
+    "national wildlife area",         # Specific wildlife area designations
+    "migratory bird sanctuary",       # Specific sanctuary designations
+
+    # ── Food & agriculture technical ──────────────────────────────────────────
+    "feed ingredient",                # Proposed amended livestock feed ingredient
+    "livestock feed",                 # Livestock Feed Regulations
+    "food additive",                  # Technical food additive approvals
+    "novel food",                     # New food substance approvals
+    "vitamin",                        # Vitamin E acetate, etc.
+    "mineral supplement",             # Specific supplement regulations
+    "crop protection",                # Pesticide/product approvals
+    "variety registration",           # Seed variety technical registrations
+    "plant variety",                  # Plant Variety Protection
+
+    # ── Fisheries & wildlife technical ───────────────────────────────────────
+    "total allowable catch",          # Annual quota-setting notices
+    "integrated fisheries management",# Very specific fisheries management plans
+
+    # ── Pest control & residue limits ─────────────────────────────────────────
+    "pest control product",           # Pesticide registrations
+    "maximum residue limit",          # Pesticide residue in food
+    "residue limit",                  # Residue limits (shorter form)
+
+    # ── Drug & health product technical ──────────────────────────────────────
+    "veterinary drug",                # Specific veterinary drug approvals
+    "natural health product",         # Supplement/NHP technical approvals
+    "drug submission",                # Pharmaceutical technical submissions
+
+    # ── Chemical & substance registration (CEPA) ──────────────────────────────
+    "new substance notification",     # Chemical notification requirements
+    "significant new activity",       # CEPA s.85/106 notices
+
+    # ── Environmental technical ───────────────────────────────────────────────
+    "effluent",                       # Specific discharge concentration limits
+    "ambient air quality",            # Technical air quality monitoring standards
+    "wastewater system",              # Specific wastewater technical rules
+
+    # ── Nuclear & radiation ───────────────────────────────────────────────────
+    "nuclear substance",              # Nuclear substance regulations
+    "radioactive",                    # Radioactive waste, nuclear technical items
+
+    # ── Transport technical ───────────────────────────────────────────────────
+    "airworthiness",                  # Aviation airworthiness directives
+    "load line",                      # Marine load line technical standards
+
+    # ── Broadcasting & telecom technical ──────────────────────────────────────
+    "radio apparatus",                # Equipment technical standards
+
+    # ── Other narrow technical ────────────────────────────────────────────────
+    "calibration",                    # Laboratory/measurement standards
+    "tariff item",                    # Customs tariff technical amendments
 ]
 
 
