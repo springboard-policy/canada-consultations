@@ -443,14 +443,18 @@ TEMPLATE = """<!DOCTYPE html>
     .urgency-open    { --urgency-color: #2E7D32; }
     .urgency-ongoing { --urgency-color: #6B3A8B; }
 
-    /* ── Urgency filter bar — sticky ── */
-    .urgency-filters {
+    /* ── Sticky top bar (TOC + filter buttons) ── */
+    .sticky-bar {
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    }
+
+    /* ── Urgency filter bar ── */
+    .urgency-filters {
       background: #fff;
       border-bottom: 1px solid #ddd;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
       padding: 0.55rem 2.5rem;
       display: flex;
       flex-wrap: wrap;
@@ -562,14 +566,14 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="total-badge">{{ total }} item{{ 's' if total != 1 else '' }} found</div>
 </header>
 
-<!-- ── Table of contents ────────────────────────────────────────────── -->
+<!-- ── Sticky bar: TOC + urgency filters ───────────────────────────── -->
+<div class="sticky-bar">
 <nav class="toc">
   {% for sec in sections %}
     <a href="#{{ sec.id }}">{{ sec.icon }}: {{ sec.count }}</a>
   {% endfor %}
 </nav>
 
-<!-- ── Urgency filter buttons (sticky) ─────────────────────────────── -->
 <div class="urgency-filters">
   <span class="filter-label">Show:</span>
   <button class="filter-btn active" data-urgency="urgent" style="--btn-color:#C8102E">Closes &lt;7 days</button>
@@ -577,6 +581,7 @@ TEMPLATE = """<!DOCTYPE html>
   <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32">Open</button>
   <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B">No fixed deadline</button>
 </div>
+</div>{# end .sticky-bar #}
 
 <!-- ── Sections ────────────────────────────────────────────────────── -->
 <main class="content">
