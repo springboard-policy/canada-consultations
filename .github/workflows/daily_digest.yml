@@ -5,6 +5,8 @@ on:
     # 10:00 UTC = 5:00 AM Eastern Standard Time (6:00 AM EDT in summer)
     - cron: '0 10 * * *'
   workflow_dispatch:   # lets you trigger a run manually from the GitHub website
+  push:
+    branches: [main]   # also runs whenever code is pushed
 
 jobs:
   generate:
