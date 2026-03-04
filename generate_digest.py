@@ -541,12 +541,17 @@ TEMPLATE = """<!DOCTYPE html>
     .section-header { cursor: pointer; user-select: none; }
     .section-header:hover { opacity: 0.85; }
     .section-toggle {
-      margin-left: 0.5rem;
-      font-size: 0.7rem;
-      color: #999;
+      margin-left: auto;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--section-color);
+      border: 1px solid var(--section-color);
+      border-radius: 4px;
+      padding: 0.1rem 0.5rem;
       flex-shrink: 0;
+      letter-spacing: 0.03em;
     }
-    .section-body { }
     .section.collapsed .section-body { display: none; }
 
     @media (max-width: 600px) {
@@ -592,7 +597,7 @@ TEMPLATE = """<!DOCTYPE html>
     <span class="section-icon">{{ sec.icon }}</span>
     <h2>{{ sec.label }}</h2>
     <span class="section-count">{{ sec.count }} item{{ 's' if sec.count != 1 else '' }}</span>
-    <span class="section-toggle">&#9650;</span>
+    <span class="section-toggle">Hide</span>
   </div>
 
   <div class="section-body">
@@ -726,7 +731,7 @@ TEMPLATE = """<!DOCTYPE html>
       var section = header.closest('.section');
       var toggle  = header.querySelector('.section-toggle');
       section.classList.toggle('collapsed');
-      toggle.innerHTML = section.classList.contains('collapsed') ? '&#9660;' : '&#9650;';
+      toggle.textContent = section.classList.contains('collapsed') ? 'Show' : 'Hide';
     });
   });
 </script>
