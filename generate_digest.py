@@ -443,6 +443,46 @@ TEMPLATE = """<!DOCTYPE html>
     .urgency-open    { --urgency-color: #2E7D32; }
     .urgency-ongoing { --urgency-color: #6B3A8B; }
 
+    /* ── Urgency filter bar — sticky ── */
+    .urgency-filters {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+      padding: 0.55rem 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .urgency-filters .filter-label {
+      font-size: 0.8rem;
+      color: #555;
+      margin-right: 0.2rem;
+    }
+    .filter-btn {
+      font-size: 0.78rem;
+      font-weight: 700;
+      font-family: inherit;
+      border: 2px solid var(--btn-color);
+      border-radius: 20px;
+      padding: 0.18rem 0.7rem;
+      cursor: pointer;
+      background: var(--btn-color);
+      color: #fff;
+      transition: background 0.15s, color 0.15s;
+      line-height: 1.4;
+    }
+    .filter-btn:not(.active) {
+      background: transparent;
+      color: var(--btn-color);
+    }
+    @media (max-width: 600px) {
+      .urgency-filters { padding: 0.5rem 1rem; }
+    }
+
     /* ── Status pill (Canada.ca planned items) ── */
     .status-planned {
       font-size: 0.72rem;
@@ -493,10 +533,23 @@ TEMPLATE = """<!DOCTYPE html>
       margin-top: 2rem;
     }
 
+    /* ── Collapsible sections ── */
+    .section-header { cursor: pointer; user-select: none; }
+    .section-header:hover { opacity: 0.85; }
+    .section-toggle {
+      margin-left: 0.5rem;
+      font-size: 0.7rem;
+      color: #999;
+      flex-shrink: 0;
+    }
+    .section-body { }
+    .section.collapsed .section-body { display: none; }
+
     @media (max-width: 600px) {
       .page-header { padding: 1.25rem; }
       .toc { padding: 0.5rem 1rem; }
       .content { padding: 0 0.75rem; }
+      .urgency-filters { padding: 0.5rem 1rem; }
     }
   </style>
 </head>
@@ -509,19 +562,21 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="total-badge">{{ total }} item{{ 's' if total != 1 else '' }} found</div>
 </header>
 
-<!-- ── Urgency legend & table of contents ──────────────────────────── -->
+<!-- ── Table of contents ────────────────────────────────────────────── -->
 <nav class="toc">
   {% for sec in sections %}
     <a href="#{{ sec.id }}">{{ sec.icon }}: {{ sec.count }}</a>
   {% endfor %}
-  &nbsp;|&nbsp;
-  <span style="font-size:0.82rem;color:#555;padding:0.2rem 0;line-height:1.6">
-    <span style="color:#C8102E;font-weight:700;">&#9646;</span> Closes &lt;7 days &nbsp;
-    <span style="color:#E87722;font-weight:700;">&#9646;</span> &lt;30 days &nbsp;
-    <span style="color:#2E7D32;font-weight:700;">&#9646;</span> Open &nbsp;
-    <span style="color:#6B3A8B;font-weight:700;">&#9646;</span> No fixed deadline
-  </span>
 </nav>
+
+<!-- ── Urgency filter buttons (sticky) ─────────────────────────────── -->
+<div class="urgency-filters">
+  <span class="filter-label">Show:</span>
+  <button class="filter-btn active" data-urgency="urgent" style="--btn-color:#C8102E">Closes &lt;7 days</button>
+  <button class="filter-btn active" data-urgency="soon"   style="--btn-color:#E87722">&lt;30 days</button>
+  <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32">Open</button>
+  <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B">No fixed deadline</button>
+</div>
 
 <!-- ── Sections ────────────────────────────────────────────────────── -->
 <main class="content">
@@ -532,7 +587,10 @@ TEMPLATE = """<!DOCTYPE html>
     <span class="section-icon">{{ sec.icon }}</span>
     <h2>{{ sec.label }}</h2>
     <span class="section-count">{{ sec.count }} item{{ 's' if sec.count != 1 else '' }}</span>
+    <span class="section-toggle">&#9650;</span>
   </div>
+
+  <div class="section-body">
 
   {% if sec.note %}
   <div class="section-note">{{ sec.note }}</div>
@@ -631,6 +689,8 @@ TEMPLATE = """<!DOCTYPE html>
   </details>
   {% endif %}
 
+  </div>{# end .section-body #}
+
 </section>
 {% endfor %}
 
@@ -642,6 +702,29 @@ TEMPLATE = """<!DOCTYPE html>
   House of Commons &middot; Senate of Canada &middot;
   Ontario Regulatory Registry &middot; Ontario.ca &middot; Ontario Legislature
 </footer>
+
+<script>
+  // ── Urgency filter buttons ────────────────────────────────────────────────
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      btn.classList.toggle('active');
+      var show = btn.classList.contains('active');
+      document.querySelectorAll('.urgency-' + btn.dataset.urgency).forEach(function(item) {
+        item.style.display = show ? '' : 'none';
+      });
+    });
+  });
+
+  // ── Collapsible section headers ───────────────────────────────────────────
+  document.querySelectorAll('.section-header').forEach(function(header) {
+    header.addEventListener('click', function() {
+      var section = header.closest('.section');
+      var toggle  = header.querySelector('.section-toggle');
+      section.classList.toggle('collapsed');
+      toggle.innerHTML = section.classList.contains('collapsed') ? '&#9660;' : '&#9650;';
+    });
+  });
+</script>
 
 </body>
 </html>
