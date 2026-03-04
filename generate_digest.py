@@ -233,9 +233,9 @@ def collect_all() -> dict:
             "color":    "#6B3A8B",
             "fetch":    fetch_senate.fetch_studies,
             "note":     (
-                "Senate committees accept written briefs at any time during a study — "
-                "no fixed deadline. Email ctm@sen.parl.gc.ca with the study title and "
-                "committee name. Showing studies referred in the last 90 days first."
+                "Showing Senate committee studies referred in the last 30 days. "
+                "Committees accept written briefs at any time during a study — no fixed deadline. "
+                "Email ctm@sen.parl.gc.ca with the study title and committee name."
             ),
         },
         {

@@ -31,9 +31,8 @@ SESSION_START = date(2025, 5, 26)     # Update this when a new session begins
 
 STUDIES_API = f"{BASE_URL}/umbraco/surface/CommitteesAjax/GetTablePartialView"
 
-# How many days since the Order of Reference to consider a study "recent".
-# Studies older than this are still shown but marked as longer-running.
-RECENT_DAYS = 90
+# Only return studies referred within this many days (Order of Reference date).
+RECENT_DAYS = 30
 
 # Committees to exclude — purely administrative, not substantive
 EXCLUDED_COMMITTEES = {
@@ -148,8 +147,14 @@ def fetch_studies() -> list[dict]:
             "committee_url": clean_committee_url,
         })
 
-    # Sort: most recently referred studies first (None dates go to the end)
-    results.sort(key=lambda x: x["oor_date"] or date.min, reverse=True)
+    # Keep only studies referred in the last RECENT_DAYS days
+    results = [
+        r for r in results
+        if r["oor_date"] and (today - r["oor_date"]).days <= RECENT_DAYS
+    ]
+
+    # Sort: most recently referred first
+    results.sort(key=lambda x: x["oor_date"], reverse=True)
     return results
 
 
