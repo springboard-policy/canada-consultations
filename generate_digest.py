@@ -246,9 +246,15 @@ def urgency(item: dict) -> str:
       'open'    — closes in 30+ days or no deadline
       'ongoing' — Senate studies (no fixed deadline)
     """
-    # Senate studies have no comment deadline
+    # Senate: use next meeting date if available, otherwise "open" (recently active)
     if item.get("source") == "Senate of Canada Committees":
-        return "ongoing"
+        nm = item.get("next_meeting")
+        if nm:
+            days = (nm - date.today()).days
+            if days <= 7:  return "urgent"
+            if days <= 30: return "soon"
+            return "open"
+        return "open"
 
     deadline_str = item.get("deadline", "")
     d = _extract_date(deadline_str)
@@ -273,8 +279,6 @@ def collect_all() -> dict:
     total = 0
     previous_keys = load_previous_keys()
     current_keys  = []
-
-    senate_cutoff = (date.today() - timedelta(days=30)).strftime("%B %d, %Y")
 
     sources = [
         {
@@ -336,10 +340,11 @@ def collect_all() -> dict:
             "color":    "#6B3A8B",
             "fetch":    fetch_senate.fetch_studies,
             "note":     (
-                f"Showing only Senate committee studies referred since {senate_cutoff} (last 30 days). "
-                f"Studies referred before that date are not shown here, but may still be active. "
-                f"Senate committees accept written briefs at any time during a study — no fixed deadline. "
-                f"To submit, email ctm@sen.parl.gc.ca with the study title and committee name."
+                "Showing studies where the committee has met in the last 45 days or has a meeting "
+                "scheduled in the next 14 days — a signal the study is actively underway. "
+                "Studies with an upcoming meeting are sorted first. "
+                "Senate committees accept written briefs at any time during a study — no fixed deadline. "
+                "To submit, email ctm@sen.parl.gc.ca with the study title and committee name."
             ),
         },
         {
@@ -823,15 +828,25 @@ TEMPLATE = """<!DOCTYPE html>
         </span>
         {% endif %}
 
-        {# Deadline or Order of Reference #}
-        {% if item.deadline and 'not specified' not in item.deadline|lower %}
+        {# Deadline / meeting dates #}
+        {% if item.next_meeting_str %}
+          <span>
+            <span class="label">Next meeting:</span>
+            <span class="deadline-badge">{{ item.next_meeting_str }}</span>
+          </span>
+        {% elif item.deadline and 'not specified' not in item.deadline|lower %}
           <span>
             <span class="label">Deadline:</span>
             <span class="deadline-badge">{{ item.deadline }}</span>
           </span>
-        {% elif item.oor_label %}
+        {% endif %}
+        {% if item.last_meeting_str %}
           <span>
-            <span class="label">Study referred:</span> {{ item.oor_label }}
+            <span class="label">Last met:</span> {{ item.last_meeting_str }}
+          </span>
+        {% elif item.oor_label and not item.next_meeting_str %}
+          <span>
+            <span class="label">Referred:</span> {{ item.oor_label }}
           </span>
         {% endif %}
 
