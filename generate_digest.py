@@ -57,25 +57,102 @@ BLOCKLIST = [
     # ── Fisheries & wildlife technical ───────────────────────────────────────
     "total allowable catch",          # Annual quota-setting notices
     "integrated fisheries management",# Very specific fisheries management plans
+    "fish habitat",                   # Fish habitat protection technical notices
+    "marine conservation",            # Marine conservation area designations
+    "marine protected area",          # Specific MPA designation notices
+    "aquatic invasive",               # Invasive species management notices
+    "stock assessment",               # Fisheries stock assessment documents
+    "bycatch",                        # Incidental catch technical rules
+    "spawning habitat",               # Specific habitat protection notices
+    "hatchery",                       # Fish hatchery operational rules
+    "fish passage",                   # Fish ladder/passage technical standards
+    "aquaculture",                    # Aquaculture technical regulations
+    "riparian",                       # Riparian habitat technical rules
+    "waterfowl",                      # Waterfowl habitat/management technical
+    "ungulate",                       # Wildlife population management
+    "population viability",           # Species population technical assessments
+    "bird strike",                    # Aviation wildlife strike technical rules
 
-    # ── Pest control & residue limits ─────────────────────────────────────────
+    # ── Pesticides & agrochemicals ────────────────────────────────────────────
+    "pesticide",                      # Pesticide approvals and amendments
+    "active ingredient",              # Active ingredient technical assessments
+    "herbicide",                      # Herbicide registrations
+    "fungicide",                      # Fungicide registrations
+    "insecticide",                    # Insecticide registrations
+    "biocide",                        # Biocide product approvals
+    "rodenticide",                    # Rodenticide registrations
     "pest control product",           # Pesticide registrations
     "maximum residue limit",          # Pesticide residue in food
     "residue limit",                  # Residue limits (shorter form)
+    "crop protection",                # Pesticide/product approvals
 
     # ── Drug & health product technical ──────────────────────────────────────
     "veterinary drug",                # Specific veterinary drug approvals
     "natural health product",         # Supplement/NHP technical approvals
     "drug submission",                # Pharmaceutical technical submissions
+    "medical device",                 # Medical device technical approvals
+    "pathogen",                       # Pathogen risk/containment regulations
+    "in vitro",                       # Lab/diagnostic technical standards
+    "bioequivalence",                 # Drug bioequivalence technical submissions
+    "pharmacokinetic",                # Drug pharmacokinetics technical data
+    "product monograph",              # Drug product monograph updates
+    "excipient",                      # Drug formulation ingredient approvals
+    "dissolution",                    # Drug dissolution testing standards
+
+    # ── Food safety technical ─────────────────────────────────────────────────
+    "microbiological",                # Microbiological criteria for food
+    "food contact material",          # Food packaging/contact material approvals
+    "shelf life",                     # Food shelf life technical assessments
+    "listeria",                       # Specific pathogen food safety rules
+    "salmonella",                     # Specific pathogen food safety rules
+    "hazard analysis",                # HACCP/food safety technical frameworks
 
     # ── Chemical & substance registration (CEPA) ──────────────────────────────
     "new substance notification",     # Chemical notification requirements
     "significant new activity",       # CEPA s.85/106 notices
+    "chemical substance",             # Chemical substance assessments
+    "substance assessment",           # CEPA substance risk assessments
 
     # ── Environmental technical ───────────────────────────────────────────────
     "effluent",                       # Specific discharge concentration limits
     "ambient air quality",            # Technical air quality monitoring standards
     "wastewater system",              # Specific wastewater technical rules
+    "site remediation",               # Contaminated site cleanup technical rules
+    "contaminated site",              # Site contamination assessments
+    "soil contamination",             # Soil contamination technical standards
+    "groundwater",                    # Groundwater quality technical standards
+    "leachate",                       # Leachate treatment technical rules
+    "harbour remediation",            # Harbour contamination cleanup notices
+    "benthic",                        # Benthic (seafloor) habitat technical studies
+    "sediment quality",               # Sediment contamination technical standards
+    "asbestos",                       # Asbestos abatement/management technical
+
+    # ── Marine technical ──────────────────────────────────────────────────────
+    "ballast water",                  # Ship ballast water technical standards
+    "antifouling",                    # Hull antifouling coating regulations
+    "underwater noise",               # Marine underwater noise technical limits
+    "hull fouling",                   # Vessel hull fouling technical rules
+    "dredging",                       # Dredging permit/technical standards
+
+    # ── Mining & geology ──────────────────────────────────────────────────────
+    "mine tailings",                  # Mine waste tailings management rules
+    "mineral processing",             # Mineral extraction technical standards
+    "tailings management",            # Tailings facility technical rules
+    "quarry",                         # Quarry operation technical regulations
+    "geological survey",              # Geological survey technical reports
+    "mineral survey",                 # Mineral rights/survey technical notices
+
+    # ── Engineering & infrastructure technical ────────────────────────────────
+    "geotechnical",                   # Geotechnical engineering standards
+    "pressure vessel",                # Pressure vessel technical standards
+    "structural integrity",           # Structural engineering technical rules
+    "pipeline integrity",             # Pipeline inspection technical standards
+    "corrosion",                      # Corrosion control technical standards
+
+    # ── Forestry technical ────────────────────────────────────────────────────
+    "silviculture",                   # Forest management technical practices
+    "harvest volume",                 # Timber harvest volume technical limits
+    "allowable cut",                  # Annual allowable cut technical determinations
 
     # ── Nuclear & radiation ───────────────────────────────────────────────────
     "nuclear substance",              # Nuclear substance regulations
@@ -84,14 +161,12 @@ BLOCKLIST = [
     # ── Transport technical ───────────────────────────────────────────────────
     "airworthiness",                  # Aviation airworthiness directives
     "load line",                      # Marine load line technical standards
-
-    # ── Broadcasting & telecom technical ──────────────────────────────────────
-    "radio apparatus",                # Equipment technical standards
-
-    # ── Transport technical ───────────────────────────────────────────────────
     "dangerous goods",                # Transport of Dangerous Goods exemptions
     "airspace",                       # Aviation airspace technical designations
     "vessel construction",            # Marine vessel technical standards
+
+    # ── Broadcasting & telecom technical ──────────────────────────────────────
+    "radio apparatus",                # Equipment technical standards
 
     # ── More agriculture ──────────────────────────────────────────────────────
     "fertilizer",                     # Specific fertilizer composition rules
@@ -107,12 +182,17 @@ BLOCKLIST = [
     "disposal at sea",                # Marine disposal permit applications
     "sewage system",                  # Small sewage system technical rules
 
+    # ── Technical standards & measurement ────────────────────────────────────
+    "test method",                    # Laboratory test method standards
+    "technical specification",        # Product/process technical specs
+    "measurement standard",           # Measurement and calibration standards
+    "compliance guide",               # Technical compliance guidance documents
+    "product standard",               # Specific product technical standards
+    "calibration",                    # Laboratory/measurement standards
+
     # ── Gazette housekeeping ──────────────────────────────────────────────────
     "miscellaneous amendments",       # Regulatory housekeeping notices
     "corrections and errata",         # Gazette corrections, never substantive
-
-    # ── Other narrow technical ────────────────────────────────────────────────
-    "calibration",                    # Laboratory/measurement standards
     "tariff item",                    # Customs tariff technical amendments
 ]
 
