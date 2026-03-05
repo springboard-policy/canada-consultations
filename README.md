@@ -76,7 +76,7 @@ Many consultations are too technical to be relevant to a policy generalist — t
 
 The blocklist is defined in `generate_digest.py` under `BLOCKLIST`. Items whose titles match any of the ~50 phrases are hidden from the main view but shown in a collapsed "X items not shown" note at the bottom of each section, so you can still check what's being filtered.
 
-**Categories filtered out:** species at risk, food and agriculture technical, fisheries management, pest control, drug and health product approvals, chemical registration, environmental technical standards, nuclear, aviation technical, dangerous goods, fertilizers, biologics, and Gazette housekeeping items.
+**Categories filtered out:** species at risk, pesticides and agrochemicals, fisheries and wildlife biology, marine technical, food safety technical, drug and health product approvals, pharmaceutical technical, medical devices, chemical and substance registration, environmental remediation and contamination, mining and geology, engineering and infrastructure, forestry, nuclear, transport technical, technical standards and measurement, and Gazette housekeeping items.
 
 ### Step 3: HTML digest with Jinja2
 
