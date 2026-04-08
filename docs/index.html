@@ -43,8 +43,10 @@
       padding: 0.75rem 2.5rem;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       gap: 0.5rem;
     }
+    .toc .search-wrap { margin-left: auto; }
     .toc a {
       font-size: 0.82rem;
       color: #26374A;
@@ -293,19 +295,8 @@
     .change-pill.pill-new    { background: rgba(255,255,255,0.2); color: #fff; }
     .change-pill.pill-urgent { background: #C8102E; color: #fff; }
 
-    /* ── Filter help line ── */
-    .filter-help {
-      background: #f8f8f8;
-      border-top: 1px solid #eee;
-      padding: 0.3rem 2.5rem;
-      font-size: 0.78rem;
-      color: #666;
-    }
-    @media (max-width: 600px) { .filter-help { padding: 0.3rem 1rem; } }
-
     /* ── Search box ── */
     .search-wrap {
-      margin-left: auto;
       display: flex;
       align-items: center;
     }
@@ -361,7 +352,7 @@
 <!-- ── Page header ─────────────────────────────────────────────────── -->
 <header class="page-header">
   <h1>Canadian Consultations Digest</h1>
-  <div class="subtitle">Wednesday, April 08, 2026 &nbsp;·&nbsp; Ten sources checked &nbsp;·&nbsp; 87 items found</div>
+  <div class="subtitle">Wednesday, April 08, 2026 &nbsp;·&nbsp; Ten sources checked &nbsp;·&nbsp; 89 items found</div>
   <div class="header-description">A daily briefing of open public consultations across federal and Ontario governments.</div>
 </header>
 
@@ -385,22 +376,21 @@
   
     <a href="#ola">OLA: 0</a>
   
-    <a href="#others">+: 1</a>
+    <a href="#others">+: 3</a>
   
-</nav>
-
-<div class="urgency-filters">
-  <span class="filter-label">Show:</span>
-  <button class="filter-btn active" data-urgency="urgent" style="--btn-color:#C8102E" title="Click to hide/show consultations closing within 7 days">Closes &lt;7 days (5)</button>
-  <button class="filter-btn active" data-urgency="soon"   style="--btn-color:#E87722" title="Click to hide/show consultations closing within 30 days">&lt;30 days (17)</button>
-  <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32" title="Click to hide/show consultations closing in 30+ days">30+ days (52)</button>
-  <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B" title="Click to hide/show ongoing consultations with no fixed deadline">No fixed deadline (13)</button>
-  <button class="filter-btn" id="new-only-btn" style="--btn-color:#1565C0; margin-left:1.5rem; border-style:dashed" title="Click to show only consultations that are new since yesterday's digest">Since yesterday (15)</button>
   <div class="search-wrap">
     <input type="search" id="search-input" placeholder="Search consultations..." autocomplete="off">
   </div>
+</nav>
+
+<div class="urgency-filters">
+  <span class="filter-label">Filter:</span>
+  <button class="filter-btn active" data-urgency="urgent" style="--btn-color:#C8102E" title="Click to hide/show consultations closing within 7 days">Closes &lt;7 days (5)</button>
+  <button class="filter-btn active" data-urgency="soon"   style="--btn-color:#E87722" title="Click to hide/show consultations closing within 30 days">&lt;30 days (17)</button>
+  <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32" title="Click to hide/show consultations closing in 30+ days">30+ days (54)</button>
+  <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B" title="Click to hide/show ongoing consultations with no fixed deadline">No fixed deadline (13)</button>
+  <button class="filter-btn" id="new-only-btn" style="--btn-color:#1565C0; margin-left:1.5rem; border-style:dashed" title="Click to show only consultations that are new since yesterday's digest">Since yesterday (23)</button>
 </div>
-<div class="filter-help">Coloured buttons = included. Click to hide/show by urgency. <strong>New only</strong> filters to items added since yesterday.</div>
 </div>
 
 <!-- ── Sections ────────────────────────────────────────────────────── -->
@@ -426,11 +416,11 @@
     
     
 
-    <article class="item urgency-soon" data-new="true">
+    <article class="item urgency-soon">
 
       
       <div class="item-title">
-        <span class="badge-new">NEW</span>
+        
         
         
           <a href="https://www.ourcommons.ca/committee-participation/en/submit-brief/fewo/13323336" target="_blank" rel="noopener">Abuse and Financial Vulnerability of Senior Women</a>
@@ -492,11 +482,11 @@
     
     
 
-    <article class="item urgency-soon" data-new="true">
+    <article class="item urgency-soon">
 
       
       <div class="item-title">
-        <span class="badge-new">NEW</span>
+        
         
         
           <a href="https://www.ourcommons.ca/committee-participation/en/submit-brief/fina/13385942" target="_blank" rel="noopener">Pre-Budget Consultations in Advance of the 2026 Budget</a>
@@ -558,11 +548,11 @@
     
     
 
-    <article class="item urgency-soon" data-new="true">
+    <article class="item urgency-soon">
 
       
       <div class="item-title">
-        <span class="badge-new">NEW</span>
+        
         
         
           <a href="https://www.ourcommons.ca/committee-participation/en/submit-brief/hesa/13145150" target="_blank" rel="noopener">Canada’s Pharmaceutical Sovereignty</a>
@@ -622,11 +612,11 @@
     
     
 
-    <article class="item urgency-soon" data-new="true">
+    <article class="item urgency-soon">
 
       
       <div class="item-title">
-        <span class="badge-new">NEW</span>
+        
         
         
           <a href="https://www.ourcommons.ca/committee-participation/en/submit-brief/huma/13408793" target="_blank" rel="noopener">Bill C-20</a>
@@ -688,11 +678,11 @@
     
     
 
-    <article class="item urgency-open" data-new="true">
+    <article class="item urgency-open">
 
       
       <div class="item-title">
-        <span class="badge-new">NEW</span>
+        
         
         
           <a href="https://www.ourcommons.ca/committee-participation/en/submit-brief/srsr/13232926" target="_blank" rel="noopener">Artificial Intelligence</a>
@@ -747,11 +737,11 @@
     
     
 
-    <article class="item urgency-open" data-new="true">
+    <article class="item urgency-open">
 
       
       <div class="item-title">
-        <span class="badge-new">NEW</span>
+        
         
         
           <a href="https://www.ourcommons.ca/committee-participation/en/submit-brief/srsr/13349880" target="_blank" rel="noopener">Governance and Accountability of Federal Science Policy and Institutions</a>
@@ -806,11 +796,11 @@
     
     
 
-    <article class="item urgency-open" data-new="true">
+    <article class="item urgency-open">
 
       
       <div class="item-title">
-        <span class="badge-new">NEW</span>
+        
         
         
           <a href="https://www.ourcommons.ca/committee-participation/en/submit-brief/srsr/13387961" target="_blank" rel="noopener">Implications of the Canada-China Preliminary Joint Arrangement on Canada’s Electric Vehicle Sector</a>
@@ -3359,11 +3349,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/pofo/45-1" target="_blank" rel="noopener">Government response, dated March 26, 2026, to the eighth report of the Standing Senate Committee on Fisheries and Oceans, entitled Sealing the Future: A Call to Action, deposited with the Clerk of the Senate on May 23, 2024, during the First Session of the Forty-fourth Parliament.</a>
@@ -3420,11 +3410,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/aefa/45-1" target="_blank" rel="noopener">Bill S-214 , An Act to amend the Special Economic Measures Act (disposal of foreign state assets)</a>
@@ -3481,11 +3471,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/soci/45-1" target="_blank" rel="noopener">Bill S-243 , An Act to establish a national framework for women’s health in Canada</a>
@@ -3542,11 +3532,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/soci/45-1" target="_blank" rel="noopener">Bill S-5 , An Act respecting the interoperability of health information technology and to prohibit data blocking by health information technology vendors</a>
@@ -3603,11 +3593,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/aefa/45-1" target="_blank" rel="noopener">Bill C-13 , An Act to implement the Protocol on the Accession of the United Kingdom of Great Britain and Northern Ireland to the Comprehensive and Progressive Agreement for Trans-Pacific Partnership</a>
@@ -3664,11 +3654,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/appa/45-1" target="_blank" rel="noopener">Government response to the Twenty-First Report of the Standing Senate Committee on Indigenous Peoples, entitled: " Respected and Protected: Towards the establishment of an Indigenous human", deposited with the Clerk of the Senate on December 12, 2024, during the First Session of the Forty-fourth Parliament</a>
@@ -3725,11 +3715,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/appa/45-1" target="_blank" rel="noopener">Government response to the Twentieth Report of the Standing Senate Committee on Indigenous Peoples, entitled: " Missing Records, Missing Children", deposited with the Clerk of the Senate on July 25, 2024, during the First Session of the Forty-fourth Parliament</a>
@@ -3786,11 +3776,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/lcjc/45-1" target="_blank" rel="noopener">Bill S-241 , An Act to amend the Criminal Code and the Indian Act</a>
@@ -3847,11 +3837,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/lcjc/45-1" target="_blank" rel="noopener">Bill C-14 , An Act to amend the Criminal Code, the Youth Criminal Justice Act and the National Defence Act (bail and sentencing)</a>
@@ -3908,11 +3898,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/appa/45-1" target="_blank" rel="noopener">Examine and report on the subject matter of Bill S-241 , An Act to amend the Criminal Code and the Indian Act</a>
@@ -3969,11 +3959,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/enev/45-1" target="_blank" rel="noopener">Bill S-4 , An Act to amend the Energy Efficiency Act</a>
@@ -4030,11 +4020,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/nffn/45-1" target="_blank" rel="noopener">Bill C-15 , An Act to implement certain provisions of the budget tabled in Parliament on November 4, 2025</a>
@@ -4091,11 +4081,11 @@ It is the Commission’s preliminary view that these markets should be served by
     
     
 
-    <article class="item urgency-ongoing">
+    <article class="item urgency-ongoing" data-new="true">
 
       
       <div class="item-title">
-        
+        <span class="badge-new">NEW</span>
         
         
           <a href="https://sencanada.ca/en/committees/nffn/45-1" target="_blank" rel="noopener">Main Estimates for the fiscal year ending March 31, 2027, with the exception of Library of Parliament Vote 1</a>
@@ -6073,7 +6063,7 @@ It is the Commission’s preliminary view that these markets should be served by
   <div class="section-header">
     <span class="section-icon">+</span>
     <h2>Other Sources</h2>
-    <span class="section-count">1 item</span>
+    <span class="section-count">3 items</span>
     <span class="section-toggle">Hide</span>
   </div>
 
@@ -6147,6 +6137,125 @@ It is the Commission’s preliminary view that these markets should be served by
 
     </article>
     
+    
+    
+
+    <article class="item urgency-open" data-new="true">
+
+      
+      <div class="item-title">
+        <span class="badge-new">NEW</span>
+        
+        
+          <a href="https://nhc-cnl.ca/review-panels/review-5" target="_blank" rel="noopener">Review Panel on the Lack of Accessible Housing in Canada</a>
+        
+      </div>
+
+      
+      <div class="item-meta">
+
+        
+        
+        
+        <span>
+          <span class="label">Body:</span>
+          National Housing Council (NHC)
+          
+        </span>
+        
+
+        
+        
+          <span>
+            <span class="label">Deadline:</span>
+            <span class="deadline-badge">June 05, 2026 (58 days remaining)</span>
+          </span>
+        
+
+        
+        
+
+        
+        
+
+      </div>
+
+      
+      
+      
+      <div class="item-summary">The review panel on the lack of accessible housing has launched its written hearing . Submissions will be accepted until June 5, 2026 .</div>
+      
+
+      
+      <div class="item-links">
+        
+          <a href="https://nhc-cnl.ca/review-panels/review-5" target="_blank" rel="noopener">View / Comment</a>
+        
+        
+        
+        
+        
+      </div>
+
+    </article>
+    
+    
+    
+
+    <article class="item urgency-open" data-new="true">
+
+      
+      <div class="item-title">
+        <span class="badge-new">NEW</span>
+        
+        
+          <a href="https://nhc-cnl.ca/review-panels/review-4" target="_blank" rel="noopener">Neha (The right to housing for women, Two Spirit, Trans, and gender-diverse people)</a>
+        
+      </div>
+
+      
+      <div class="item-meta">
+
+        
+        
+        
+        <span>
+          <span class="label">Body:</span>
+          National Housing Council (NHC)
+          
+        </span>
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+      </div>
+
+      
+      
+      
+      <div class="item-summary">The review panel, to be known as Neha, will examine the right to safe, adequate and affordable housing for women, Two Spirit, Trans, and gender-diverse people, and the government's duty to uphold this right. Neha is a Kanien'kéha-Mohawk word meaning "our ways". It describes a way of life that is open, peaceful, supportive and healing. Seen as an ever-expanding circle, Neha will be a space where pe</div>
+      
+
+      
+      <div class="item-links">
+        
+          <a href="https://nhc-cnl.ca/review-panels/review-4" target="_blank" rel="noopener">View / Comment</a>
+        
+        
+        
+        
+        
+      </div>
+
+    </article>
+    
 
   
 
@@ -6200,7 +6309,6 @@ It is the Commission’s preliminary view that these markets should be served by
   document.getElementById('new-only-btn').addEventListener('click', function() {
     newOnly = !newOnly;
     this.classList.toggle('active', newOnly);
-    this.textContent = 'New only';
     updateVisibility();
   });
 
