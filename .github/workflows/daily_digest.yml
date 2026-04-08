@@ -33,6 +33,11 @@ jobs:
       - name: Generate digest
         run: python generate_digest.py
 
+      - name: Notify Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python notify_slack.py
+
       - name: Copy digest to docs/index.html
         run: |
           mkdir -p docs

@@ -535,6 +535,21 @@ def collect_all() -> dict:
     new_entries  = [i for i in all_entries if i.get("_is_new")]
     new_count    = len(new_entries)
 
+    # Write new_items.json for the Slack notifier
+    with open("new_items.json", "w", encoding="utf-8") as f:
+        json.dump({
+            "date":  date.today().strftime("%A, %B %d, %Y"),
+            "count": new_count,
+            "items": [
+                {
+                    "title":  i.get("title", ""),
+                    "source": i.get("source", ""),
+                    "url":    i.get("url") or i.get("study_url") or i.get("committee_url") or "",
+                }
+                for i in new_entries
+            ],
+        }, f, indent=2, ensure_ascii=False)
+
     # Always prepend a "New since yesterday" section
     sections.insert(0, {
         "id":              "new",
