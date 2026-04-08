@@ -238,7 +238,7 @@ def load_previous_keys() -> set:
     try:
         with open(PREVIOUS_ITEMS_FILE, "r", encoding="utf-8") as f:
             return set(json.load(f).get("keys", []))
-    except (FileNotFoundError, ValueError):
+    except (FileNotFoundError, ValueError, AttributeError):
         return set()
 
 def save_current_keys(keys: list) -> None:
@@ -521,20 +521,19 @@ def collect_all() -> dict:
     new_entries  = [i for i in all_entries if i.get("_is_new")]
     new_count    = len(new_entries)
 
-    # Prepend a "New since yesterday" section if there are any new items
-    if new_entries:
-        sections.insert(0, {
-            "id":              "new",
-            "label":           "New Since Yesterday",
-            "icon":            "NEW",
-            "color":           "#2E7D32",
-            "note":            "These items also appear in their respective source sections below.",
-            "group":           "",
-            "entries":         new_entries,
-            "count":           new_count,
-            "filtered_count":  0,
-            "filtered_titles": [],
-        })
+    # Always prepend a "New since yesterday" section
+    sections.insert(0, {
+        "id":              "new",
+        "label":           "New Since Yesterday",
+        "icon":            "NEW",
+        "color":           "#2E7D32",
+        "note":            "These items also appear in their respective source sections below." if new_entries else "",
+        "group":           "",
+        "entries":         new_entries,
+        "count":           new_count,
+        "filtered_count":  0,
+        "filtered_titles": [],
+    })
 
     generated_at    = datetime.now(ZoneInfo("America/Toronto"))
     generated_at_str = generated_at.strftime("%I:%M %p ET").lstrip("0")
@@ -612,6 +611,8 @@ TEMPLATE = """<!DOCTYPE html>
       white-space: nowrap;
     }
     .toc a:hover { background: #f0f0f0; }
+    .toc a.toc-new { background: #2E7D32; color: #fff; border-color: #2E7D32; font-weight: 600; }
+    .toc a.toc-new:hover { background: #1B5E20; border-color: #1B5E20; }
 
     /* ── Main layout ── */
     .content { max-width: 960px; margin: 1.25rem auto; padding: 0 1.5rem; }
@@ -907,7 +908,7 @@ TEMPLATE = """<!DOCTYPE html>
 <!-- ── Page header ─────────────────────────────────────────────────── -->
 <header class="page-header">
   <h1>Canadian Consultations Digest</h1>
-  <div class="subtitle">{{ today.strftime('%A, %B %d, %Y') }} &nbsp;·&nbsp; Ten sources checked &nbsp;·&nbsp; {{ total }} item{{ 's' if total != 1 else '' }} found &nbsp;·&nbsp; Last updated {{ generated_at_str }}</div>
+  <div class="subtitle">Ten sources checked &nbsp;·&nbsp; {{ total }} item{{ 's' if total != 1 else '' }} found &nbsp;·&nbsp; {{ today.strftime('%A, %B %d, %Y') }} (Last updated {{ generated_at_str }})</div>
   <div class="header-description">A daily briefing of open public consultations across federal and Ontario governments.</div>
 </header>
 
@@ -915,7 +916,7 @@ TEMPLATE = """<!DOCTYPE html>
 <div class="sticky-bar">
 <nav class="toc">
   {% for sec in sections %}
-    <a href="#{{ sec.id }}">{{ sec.icon }}: {{ sec.count }}</a>
+    <a href="#{{ sec.id }}"{% if sec.id == 'new' %} class="toc-new"{% endif %}>{{ sec.icon }}: {{ sec.count }}</a>
   {% endfor %}
   <div class="search-wrap">
     <input type="search" id="search-input" placeholder="Search consultations..." autocomplete="off">
@@ -949,6 +950,9 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="section-note">{{ sec.note }}</div>
   {% endif %}
 
+  {% if not sec.entries and sec.id == 'new' %}
+  <p style="color:#666; font-style:italic; padding:0.5rem 0;">No new consultations since yesterday.</p>
+  {% endif %}
   {% if sec.entries %}
     {% for item in sec.entries %}
     {# ── Determine primary link ── #}
