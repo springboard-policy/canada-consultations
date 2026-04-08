@@ -131,8 +131,6 @@ def fetch_studies() -> list[dict]:
         if not clean_committee_url.startswith("http"):
             clean_committee_url = BASE_URL + clean_committee_url
 
-        studies_url = f"{BASE_URL}/en/committees/{acronym.lower()}/{SESSION}"
-
         results.append({
             "source":        "Senate of Canada Committees",
             "title":         title,
@@ -140,7 +138,7 @@ def fetch_studies() -> list[dict]:
             "acronym":       acronym,
             "oor_date":      oor_date,
             "oor_label":     oor_label,
-            "url":           studies_url,
+            "url":           clean_committee_url,
             "committee_url": clean_committee_url,
         })
 
