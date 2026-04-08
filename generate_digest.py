@@ -909,6 +909,7 @@ TEMPLATE = """<!DOCTYPE html>
   <button class="filter-btn active" data-urgency="soon"   style="--btn-color:#E87722">&lt;30 days</button>
   <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32">30+ days</button>
   <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B">No fixed deadline</button>
+  <button class="filter-btn" id="new-only-btn" style="--btn-color:#2E7D32; margin-left:0.5rem">New only</button>
   <div class="search-wrap">
     <input type="search" id="search-input" placeholder="Search consultations..." autocomplete="off">
   </div>
@@ -938,7 +939,7 @@ TEMPLATE = """<!DOCTYPE html>
     {# ── Determine primary link ── #}
     {% set primary_url = item.url or item.study_url or item.committee_url or '' %}
 
-    <article class="item urgency-{{ item._urgency }}">
+    <article class="item urgency-{{ item._urgency }}"{% if item._is_new %} data-new="true"{% endif %}>
 
       {# ── Title ── #}
       <div class="item-title">
@@ -1049,6 +1050,7 @@ TEMPLATE = """<!DOCTYPE html>
 <script>
   // ── State ─────────────────────────────────────────────────────────────────
   var activeUrgencies = new Set(['urgent', 'soon', 'open', 'ongoing']);
+  var newOnly = false;
 
   // ── Master visibility function ─────────────────────────────────────────────
   function updateVisibility() {
@@ -1059,7 +1061,8 @@ TEMPLATE = """<!DOCTYPE html>
       var urgency   = urgencyClass.replace('urgency-', '');
       var urgencyOk = activeUrgencies.has(urgency);
       var textOk    = !term || item.textContent.toLowerCase().includes(term);
-      item.style.display = (urgencyOk && textOk) ? '' : 'none';
+      var newOk     = !newOnly || item.dataset.new === 'true';
+      item.style.display = (urgencyOk && textOk && newOk) ? '' : 'none';
     });
   }
 
@@ -1071,6 +1074,13 @@ TEMPLATE = """<!DOCTYPE html>
       else                                  { activeUrgencies.delete(btn.dataset.urgency); }
       updateVisibility();
     });
+  });
+
+  // ── New only button ────────────────────────────────────────────────────────
+  document.getElementById('new-only-btn').addEventListener('click', function() {
+    newOnly = !newOnly;
+    this.classList.toggle('active', newOnly);
+    updateVisibility();
   });
 
   // ── Search ─────────────────────────────────────────────────────────────────
