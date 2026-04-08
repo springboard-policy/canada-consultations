@@ -14,6 +14,7 @@ import sys
 import re
 import json
 from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 from jinja2 import Environment, BaseLoader
 
 # ── Import all eight scrapers ─────────────────────────────────────────────────
@@ -516,12 +517,33 @@ def collect_all() -> dict:
     sections = main_sections
 
     save_current_keys(current_keys)
-    all_entries = [i for s in sections for i in s["entries"]]
+    all_entries  = [i for s in sections for i in s["entries"]]
+    new_entries  = [i for i in all_entries if i.get("_is_new")]
+    new_count    = len(new_entries)
+
+    # Prepend a "New since yesterday" section if there are any new items
+    if new_entries:
+        sections.insert(0, {
+            "id":              "new",
+            "label":           "New Since Yesterday",
+            "icon":            "NEW",
+            "color":           "#2E7D32",
+            "note":            "These items also appear in their respective source sections below.",
+            "group":           "",
+            "entries":         new_entries,
+            "count":           new_count,
+            "filtered_count":  0,
+            "filtered_titles": [],
+        })
+
+    generated_at    = datetime.now(ZoneInfo("America/Toronto"))
+    generated_at_str = generated_at.strftime("%I:%M %p ET").lstrip("0")
     return {
         "sections":        sections,
         "total":           total,
         "today":           date.today(),
-        "new_count":       sum(1 for i in all_entries if i.get("_is_new")),
+        "generated_at_str": generated_at_str,
+        "new_count":       new_count,
         "count_urgent":    sum(1 for i in all_entries if i.get("_urgency") == "urgent"),
         "count_soon":      sum(1 for i in all_entries if i.get("_urgency") == "soon"),
         "count_open":      sum(1 for i in all_entries if i.get("_urgency") == "open"),
@@ -885,7 +907,7 @@ TEMPLATE = """<!DOCTYPE html>
 <!-- ── Page header ─────────────────────────────────────────────────── -->
 <header class="page-header">
   <h1>Canadian Consultations Digest</h1>
-  <div class="subtitle">{{ today.strftime('%A, %B %d, %Y') }} &nbsp;·&nbsp; Ten sources checked &nbsp;·&nbsp; {{ total }} item{{ 's' if total != 1 else '' }} found</div>
+  <div class="subtitle">{{ today.strftime('%A, %B %d, %Y') }} &nbsp;·&nbsp; Ten sources checked &nbsp;·&nbsp; {{ total }} item{{ 's' if total != 1 else '' }} found &nbsp;·&nbsp; Last updated {{ generated_at_str }}</div>
   <div class="header-description">A daily briefing of open public consultations across federal and Ontario governments.</div>
 </header>
 
@@ -906,7 +928,6 @@ TEMPLATE = """<!DOCTYPE html>
   <button class="filter-btn active" data-urgency="soon"   style="--btn-color:#E87722" title="Click to hide/show consultations closing within 30 days">&lt;30 days ({{ count_soon }})</button>
   <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32" title="Click to hide/show consultations closing in 30+ days">30+ days ({{ count_open }})</button>
   <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B" title="Click to hide/show ongoing consultations with no fixed deadline">No fixed deadline ({{ count_ongoing }})</button>
-  <button class="filter-btn" id="new-only-btn" style="--btn-color:#1565C0; margin-left:1.5rem; border-style:dashed" title="Click to show only consultations that are new since yesterday's digest">Since yesterday ({{ new_count }})</button>
 </div>
 </div>{# end .sticky-bar #}
 
@@ -1044,7 +1065,6 @@ TEMPLATE = """<!DOCTYPE html>
 <script>
   // ── State ─────────────────────────────────────────────────────────────────
   var activeUrgencies = new Set(['urgent', 'soon', 'open', 'ongoing']);
-  var newOnly = false;
 
   // ── Master visibility function ─────────────────────────────────────────────
   function updateVisibility() {
@@ -1055,8 +1075,7 @@ TEMPLATE = """<!DOCTYPE html>
       var urgency   = urgencyClass.replace('urgency-', '');
       var urgencyOk = activeUrgencies.has(urgency);
       var textOk    = !term || item.textContent.toLowerCase().includes(term);
-      var newOk     = !newOnly || item.dataset.new === 'true';
-      item.style.display = (urgencyOk && textOk && newOk) ? '' : 'none';
+      item.style.display = (urgencyOk && textOk) ? '' : 'none';
     });
   }
 
@@ -1068,13 +1087,6 @@ TEMPLATE = """<!DOCTYPE html>
       else                                  { activeUrgencies.delete(btn.dataset.urgency); }
       updateVisibility();
     });
-  });
-
-  // ── New only button ────────────────────────────────────────────────────────
-  document.getElementById('new-only-btn').addEventListener('click', function() {
-    newOnly = !newOnly;
-    this.classList.toggle('active', newOnly);
-    updateVisibility();
   });
 
   // ── Search ─────────────────────────────────────────────────────────────────
