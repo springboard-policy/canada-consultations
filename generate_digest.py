@@ -207,6 +207,7 @@ BLOCKLIST = [
     "drinking water guideline",       # Health Canada DW quality guidelines (technical)
     "drinking water standard",        # Technical DW quality standards
     "drinking water quality guideline",# Long form of the above
+    "guidelines for canadian drinking water", # Catches "Draft guidelines for Canadian drinking water quality..."
     "drinking water treatment",       # Treatment plant technical standards
     "chloramine",                     # Specific disinfection byproduct rules
     "chlorination",                   # Water chlorination technical rules
@@ -216,6 +217,17 @@ BLOCKLIST = [
     "nitrate guideline",              # Nitrate drinking water guideline
     "arsenic guideline",              # Arsenic drinking water guideline
     "lead in drinking water",         # Lead DW guideline (technical)
+
+    # ── PMRA pesticide re-evaluations ─────────────────────────────────────────
+    "proposed re-evaluation",         # PMRA PRVD pesticide re-evaluation decisions
+    "re-evaluation decision",         # Same — catches "Proposed Re-evaluation Decision PRVD..."
+
+    # ── Consumer product codes of practice ────────────────────────────────────
+    "code of practice for",           # Health Canada codes of practice (e.g. benzophenone)
+
+    # ── ICH drug harmonization technical notices ──────────────────────────────
+    " ich ",                          # ICH (International Council for Harmonisation) docs — space-padded to avoid matching "which"
+    "ich guideline",                  # ICH guideline documents
 ]
 
 # ── Department-level filter ───────────────────────────────────────────────────
@@ -594,21 +606,24 @@ TEMPLATE = """<!DOCTYPE html>
     .toc {
       background: #fff;
       border-bottom: 1px solid #ddd;
-      padding: 0.75rem 2.5rem;
+      padding: 0.5rem 2.5rem;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.3rem;
+      overflow-x: auto;
     }
-    .toc .search-wrap { margin-left: auto; }
+    .toc .search-wrap { margin-left: auto; flex-shrink: 0; padding-left: 0.5rem; }
+    .toc .search-wrap input { width: 160px; }
     .toc a {
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       color: #26374A;
       text-decoration: none;
       border: 1px solid #ccc;
       border-radius: 4px;
-      padding: 0.2rem 0.6rem;
+      padding: 0.15rem 0.45rem;
       white-space: nowrap;
+      flex-shrink: 0;
     }
     .toc a:hover { background: #f0f0f0; }
     .toc a.toc-new { background: #2E7D32; color: #fff; border-color: #2E7D32; font-weight: 600; }
