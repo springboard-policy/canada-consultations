@@ -516,14 +516,16 @@ def collect_all() -> dict:
     sections = main_sections
 
     save_current_keys(current_keys)
-    new_count    = sum(1 for s in sections for i in s["entries"] if i.get("_is_new"))
-    urgent_count = sum(1 for s in sections for i in s["entries"] if i.get("_urgency") == "urgent")
+    all_entries = [i for s in sections for i in s["entries"]]
     return {
-        "sections":     sections,
-        "total":        total,
-        "today":        date.today(),
-        "new_count":    new_count,
-        "urgent_count": urgent_count,
+        "sections":        sections,
+        "total":           total,
+        "today":           date.today(),
+        "new_count":       sum(1 for i in all_entries if i.get("_is_new")),
+        "count_urgent":    sum(1 for i in all_entries if i.get("_urgency") == "urgent"),
+        "count_soon":      sum(1 for i in all_entries if i.get("_urgency") == "soon"),
+        "count_open":      sum(1 for i in all_entries if i.get("_urgency") == "open"),
+        "count_ongoing":   sum(1 for i in all_entries if i.get("_urgency") == "ongoing"),
     }
 
 
@@ -555,6 +557,7 @@ TEMPLATE = """<!DOCTYPE html>
     }
     .page-header h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.25rem; }
     .page-header .subtitle { font-size: 0.9rem; opacity: 0.8; }
+    .header-description { font-size: 0.85rem; opacity: 0.7; margin-top: 0.25rem; }
     .page-header .total-badge {
       display: inline-block;
       background: #fff;
@@ -891,18 +894,8 @@ TEMPLATE = """<!DOCTYPE html>
 <!-- ── Page header ─────────────────────────────────────────────────── -->
 <header class="page-header">
   <h1>Canadian Consultations Digest</h1>
-  <div class="subtitle">{{ today.strftime('%A, %B %d, %Y') }} &nbsp;·&nbsp; Ten sources checked</div>
-  <div class="total-badge">{{ total }} item{{ 's' if total != 1 else '' }} found</div>
-  {% if new_count > 0 or urgent_count > 0 %}
-  <div class="change-summary">
-    {% if new_count > 0 %}
-      <span class="change-pill pill-new">{{ new_count }} new since yesterday</span>
-    {% endif %}
-    {% if urgent_count > 0 %}
-      <span class="change-pill pill-urgent">{{ urgent_count }} closing within 7 days</span>
-    {% endif %}
-  </div>
-  {% endif %}
+  <div class="subtitle">{{ today.strftime('%A, %B %d, %Y') }} &nbsp;·&nbsp; Ten sources checked &nbsp;·&nbsp; {{ total }} item{{ 's' if total != 1 else '' }} found</div>
+  <div class="header-description">A daily briefing of open public consultations across federal and Ontario governments.</div>
 </header>
 
 <!-- ── Sticky bar: TOC + urgency filters ───────────────────────────── -->
@@ -915,11 +908,11 @@ TEMPLATE = """<!DOCTYPE html>
 
 <div class="urgency-filters">
   <span class="filter-label">Show:</span>
-  <button class="filter-btn active" data-urgency="urgent" style="--btn-color:#C8102E" title="Click to hide/show consultations closing within 7 days">Closes &lt;7 days</button>
-  <button class="filter-btn active" data-urgency="soon"   style="--btn-color:#E87722" title="Click to hide/show consultations closing within 30 days">&lt;30 days</button>
-  <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32" title="Click to hide/show consultations closing in 30+ days">30+ days</button>
-  <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B" title="Click to hide/show ongoing consultations with no fixed deadline">No fixed deadline</button>
-  <button class="filter-btn" id="new-only-btn" style="--btn-color:#1565C0; margin-left:0.75rem" title="Click to show only consultations that are new since yesterday's digest">New only</button>
+  <button class="filter-btn active" data-urgency="urgent" style="--btn-color:#C8102E" title="Click to hide/show consultations closing within 7 days">Closes &lt;7 days ({{ count_urgent }})</button>
+  <button class="filter-btn active" data-urgency="soon"   style="--btn-color:#E87722" title="Click to hide/show consultations closing within 30 days">&lt;30 days ({{ count_soon }})</button>
+  <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32" title="Click to hide/show consultations closing in 30+ days">30+ days ({{ count_open }})</button>
+  <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B" title="Click to hide/show ongoing consultations with no fixed deadline">No fixed deadline ({{ count_ongoing }})</button>
+  <button class="filter-btn" id="new-only-btn" style="--btn-color:#1565C0; margin-left:1.5rem; border-style:dashed" title="Click to show only consultations that are new since yesterday's digest">Since yesterday ({{ new_count }})</button>
   <div class="search-wrap">
     <input type="search" id="search-input" placeholder="Search consultations..." autocomplete="off">
   </div>
@@ -1091,7 +1084,7 @@ TEMPLATE = """<!DOCTYPE html>
   document.getElementById('new-only-btn').addEventListener('click', function() {
     newOnly = !newOnly;
     this.classList.toggle('active', newOnly);
-    this.textContent = newOnly ? 'New only: ON' : 'New only';
+    this.textContent = 'New only';
     updateVisibility();
   });
 
