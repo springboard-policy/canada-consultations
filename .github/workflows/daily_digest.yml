@@ -2,8 +2,8 @@ name: Daily Consultations Digest
 
 on:
   schedule:
-    # 10:00 UTC = 5:00 AM Eastern Standard Time (6:00 AM EDT in summer)
-    - cron: '0 10 * * *'
+    # 12:00 UTC = 8:00 AM EDT (summer) / 7:00 AM EST (winter)
+    - cron: '0 12 * * *'
   workflow_dispatch:   # lets you trigger a run manually from the GitHub website
   push:
     branches: [main]
