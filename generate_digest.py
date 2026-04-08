@@ -175,11 +175,13 @@ BLOCKLIST = [
 
     # ── Broadcasting & telecom technical ──────────────────────────────────────
     "radio apparatus",                # Equipment technical standards
+    "jammer exemption",               # ISED jammer exemption orders (law enforcement)
 
     # ── More agriculture ──────────────────────────────────────────────────────
     "fertilizer",                     # Specific fertilizer composition rules
     "grain grading",                  # Grain inspection and grading technical
     "seed potato",                    # Agricultural seed certification
+    "grape variety",                  # Vine variety registration (technical)
 
     # ── More pharmaceutical / health products ─────────────────────────────────
     "biologic",                       # Biologic drug technical approvals
