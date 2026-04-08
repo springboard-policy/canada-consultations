@@ -576,8 +576,10 @@ TEMPLATE = """<!DOCTYPE html>
       padding: 0.75rem 2.5rem;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       gap: 0.5rem;
     }
+    .toc .search-wrap { margin-left: auto; }
     .toc a {
       font-size: 0.82rem;
       color: #26374A;
@@ -826,19 +828,8 @@ TEMPLATE = """<!DOCTYPE html>
     .change-pill.pill-new    { background: rgba(255,255,255,0.2); color: #fff; }
     .change-pill.pill-urgent { background: #C8102E; color: #fff; }
 
-    /* ── Filter help line ── */
-    .filter-help {
-      background: #f8f8f8;
-      border-top: 1px solid #eee;
-      padding: 0.3rem 2.5rem;
-      font-size: 0.78rem;
-      color: #666;
-    }
-    @media (max-width: 600px) { .filter-help { padding: 0.3rem 1rem; } }
-
     /* ── Search box ── */
     .search-wrap {
-      margin-left: auto;
       display: flex;
       align-items: center;
     }
@@ -904,20 +895,19 @@ TEMPLATE = """<!DOCTYPE html>
   {% for sec in sections %}
     <a href="#{{ sec.id }}">{{ sec.icon }}: {{ sec.count }}</a>
   {% endfor %}
+  <div class="search-wrap">
+    <input type="search" id="search-input" placeholder="Search consultations..." autocomplete="off">
+  </div>
 </nav>
 
 <div class="urgency-filters">
-  <span class="filter-label">Show:</span>
+  <span class="filter-label">Filter:</span>
   <button class="filter-btn active" data-urgency="urgent" style="--btn-color:#C8102E" title="Click to hide/show consultations closing within 7 days">Closes &lt;7 days ({{ count_urgent }})</button>
   <button class="filter-btn active" data-urgency="soon"   style="--btn-color:#E87722" title="Click to hide/show consultations closing within 30 days">&lt;30 days ({{ count_soon }})</button>
   <button class="filter-btn active" data-urgency="open"   style="--btn-color:#2E7D32" title="Click to hide/show consultations closing in 30+ days">30+ days ({{ count_open }})</button>
   <button class="filter-btn active" data-urgency="ongoing" style="--btn-color:#6B3A8B" title="Click to hide/show ongoing consultations with no fixed deadline">No fixed deadline ({{ count_ongoing }})</button>
   <button class="filter-btn" id="new-only-btn" style="--btn-color:#1565C0; margin-left:1.5rem; border-style:dashed" title="Click to show only consultations that are new since yesterday's digest">Since yesterday ({{ new_count }})</button>
-  <div class="search-wrap">
-    <input type="search" id="search-input" placeholder="Search consultations..." autocomplete="off">
-  </div>
 </div>
-<div class="filter-help">Coloured buttons = included. Click to hide/show by urgency. <strong>New only</strong> filters to items added since yesterday.</div>
 </div>{# end .sticky-bar #}
 
 <!-- ── Sections ────────────────────────────────────────────────────── -->
@@ -1084,7 +1074,6 @@ TEMPLATE = """<!DOCTYPE html>
   document.getElementById('new-only-btn').addEventListener('click', function() {
     newOnly = !newOnly;
     this.classList.toggle('active', newOnly);
-    this.textContent = 'New only';
     updateVisibility();
   });
 
