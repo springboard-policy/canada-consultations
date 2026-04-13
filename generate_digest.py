@@ -246,7 +246,7 @@ DEPT_BLOCKLIST = [
 # ── "New today" tracking ──────────────────────────────────────────────────────
 
 PREVIOUS_ITEMS_FILE  = "previous_items.json"
-CACHED_OTHERS_FILE   = "cached_others.json"
+CACHED_SOURCES_FILE  = "cached_sources.json"
 
 def load_previous_keys() -> set:
     """Load item keys from the last run, or empty set if first run."""
@@ -270,25 +270,25 @@ def save_current_keys(keys: list, previous_keys: set | None = None) -> None:
         json.dump({"date": date.today().isoformat(), "keys": sorted(merged)}, f, indent=2)
 
 
-# ── "Other sources" cache (CRTC, NHC) ────────────────────────────────────────
+# ── Per-source cache (CRTC, NHC, Ontario Registry) ───────────────────────────
 #
-# When an "others"-group scraper returns nothing (network hiccup, page change),
-# we fall back to the most recent successful results rather than showing an
-# empty section.  Cached items are re-checked against today's date so that a
-# consultation that has since closed is not shown.
+# Sources marked "use_cache": True fall back to the most recent successful
+# results when a live fetch returns nothing (network hiccup, API flakiness,
+# page-structure change).  Cached items are re-checked against today's date
+# so that a consultation that has since closed is not shown.
 
-def load_cached_others() -> dict:
+def load_cached_sources() -> dict:
     """Return { source_id: [raw_item, ...] } from the last good scrape."""
     try:
-        with open(CACHED_OTHERS_FILE, "r", encoding="utf-8") as f:
+        with open(CACHED_SOURCES_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
             return data.get("sources", {})
     except (FileNotFoundError, ValueError, AttributeError):
         return {}
 
-def save_cached_others(cache: dict) -> None:
+def save_cached_sources(cache: dict) -> None:
     """Persist { source_id: [raw_item, ...] } for fallback use."""
-    with open(CACHED_OTHERS_FILE, "w", encoding="utf-8") as f:
+    with open(CACHED_SOURCES_FILE, "w", encoding="utf-8") as f:
         json.dump({"date": date.today().isoformat(), "sources": cache}, f,
                   indent=2, ensure_ascii=False)
 
@@ -386,8 +386,8 @@ def collect_all() -> dict:
     total = 0
     previous_keys = load_previous_keys()
     current_keys  = []
-    others_cache  = load_cached_others()
-    updated_cache = {}   # will hold fresh results for any "others" source that succeeded
+    source_cache  = load_cached_sources()
+    updated_cache = {}   # will hold fresh results for any cached source that succeeded
 
     senate_cutoff = (date.today() - timedelta(days=30)).strftime("%B %d, %Y")
 
@@ -443,6 +443,7 @@ def collect_all() -> dict:
             "icon":     "ON",
             "color":    "#00698F",
             "fetch":    fetch_ontario.fetch_proposals,
+            "use_cache": True,
             "note":     "All proposals currently accepting public comment.",
         },
         {
@@ -472,6 +473,7 @@ def collect_all() -> dict:
             "color":    "#003366",
             "fetch":    fetch_crtc.fetch,
             "group":    "others",
+            "use_cache": True,
             "note":     "Consultations currently open for public comment at the Canadian Radio-television and Telecommunications Commission.",
         },
         {
@@ -481,13 +483,14 @@ def collect_all() -> dict:
             "color":    "#5B2D8E",
             "fetch":    fetch_nhc.fetch,
             "group":    "others",
+            "use_cache": True,
             "note":     "Active written hearing opportunities from National Housing Council review panels. Submissions may be made through the NHC website.",
         },
     ]
 
     for src in sources:
         print(f"  Fetching: {src['label']} ...")
-        is_others = src.get("group") == "others"
+        use_cache  = src.get("use_cache", False)
         used_cache = False
         try:
             items = src["fetch"]()
@@ -495,20 +498,20 @@ def collect_all() -> dict:
             print(f"    [warning] Failed — skipping this source: {e}", file=sys.stderr)
             items = []
 
-        if is_others:
+        if use_cache:
             if items:
                 # Fresh results — update the cache for this source
                 updated_cache[src["id"]] = items
             else:
                 # Nothing returned — fall back to last good results
-                cached = others_cache.get(src["id"], [])
+                cached = source_cache.get(src["id"], [])
                 if cached:
                     print(f"    [cache] No results from live scrape — using cached data.", file=sys.stderr)
                     items = cached
                     used_cache = True
                 # Carry forward any previously cached entry so it isn't lost
-                if src["id"] in others_cache:
-                    updated_cache[src["id"]] = others_cache[src["id"]]
+                if src["id"] in source_cache:
+                    updated_cache[src["id"]] = source_cache[src["id"]]
 
         do_link_check = src["id"] in LINK_CHECK_SOURCES
 
@@ -557,7 +560,7 @@ def collect_all() -> dict:
         filtered_note = f", {len(filtered_titles)} filtered" if filtered_titles else ""
         print(f"    -> {len(shown)} item(s){filtered_note}{cache_note}")
 
-    save_cached_others(updated_cache)
+    save_cached_sources(updated_cache)
 
     # Merge sources marked group="others" into a single combined section
     others_entries         = []
