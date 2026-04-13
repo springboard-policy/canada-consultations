@@ -10,6 +10,7 @@ on:
     paths-ignore:
       - 'docs/index.html'       # don't re-trigger when the workflow commits the digest
       - 'previous_items.json'   # don't re-trigger when the workflow saves item history
+      - 'cached_others.json'    # don't re-trigger when the workflow saves the others cache
 
 jobs:
   generate:
@@ -34,6 +35,7 @@ jobs:
         run: python generate_digest.py
 
       - name: Notify Slack
+        if: github.event_name == 'schedule'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python notify_slack.py
@@ -47,6 +49,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/index.html previous_items.json
+          git add docs/index.html previous_items.json cached_others.json
           git commit -m "Digest: $(date +%Y-%m-%d)" || echo "No changes to commit"
           git push
