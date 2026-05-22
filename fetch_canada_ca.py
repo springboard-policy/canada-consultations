@@ -147,6 +147,8 @@ def fetch_consultations() -> list[dict]:
 
     # Sort: open first, then planned; within each group, soonest deadline first
     results.sort(key=lambda x: (0 if x["status"] == "Open" else 1, x["_end_date_obj"]))
+    for r in results:
+        del r["_end_date_obj"]
 
     n_open    = sum(1 for r in results if r["status"] == "Open")
     n_planned = sum(1 for r in results if r["status"] != "Open")

@@ -22,12 +22,13 @@ import fetch_gazette
 import fetch_canada_ca
 import fetch_hoc
 import fetch_senate
-import fetch_ontario
 import fetch_ontario_ca
 import fetch_ola
 import fetch_finance
 import fetch_crtc
 import fetch_nhc
+import fetch_nrcan
+import fetch_ero
 
 # ── Content filter ───────────────────────────────────────────────────────────
 #
@@ -230,6 +231,23 @@ BLOCKLIST = [
     # ── ICH drug harmonization technical notices ──────────────────────────────
     " ich ",                          # ICH (International Council for Harmonisation) docs — space-padded to avoid matching "which"
     "ich guideline",                  # ICH guideline documents
+
+    # ── ERO instrument applications (Ontario) ─────────────────────────────────
+    # The ERO lists both policy proposals (relevant) and individual permit/
+    # approval applications (not relevant). These title patterns catch the latter.
+    "permit to take water",           # Individual water-taking permit applications
+    "environmental compliance approval", # Facility-specific air/noise/sewage approvals
+    "mineral exploration permit",     # Individual mining exploration permits
+    "order to prevent discharge",     # Site-specific contamination orders
+    "certificate of property use",    # Site-specific property-use certificates
+    "certificate of approval",        # Legacy individual approvals (pre-2011)
+    "licence amendment",              # Wildlife/hunting licence amendments
+    "approval to register for a technical standard", # Facility air-pollution standard registrations
+    "approval of a site-specific",    # Site-specific air/noise standard approvals
+    "approval for a consent",         # Planning Act land severance consents
+    "approval for variance",          # Individual code/standard variances
+    "amend a municipality",           # Individual municipal plan amendment approvals
+    "forest manual",                  # Crown Forest Sustainability Act technical manuals
 ]
 
 # ── Department-level filter ───────────────────────────────────────────────────
@@ -283,7 +301,7 @@ def load_cached_sources() -> dict:
         with open(CACHED_SOURCES_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
             return data.get("sources", {})
-    except (FileNotFoundError, ValueError, AttributeError):
+    except (FileNotFoundError, ValueError, AttributeError, UnicodeDecodeError, OSError):
         return {}
 
 def save_cached_sources(cache: dict) -> None:
@@ -414,6 +432,7 @@ def collect_all() -> dict:
             "icon":     "FED",
             "color":    "#26374A",
             "fetch":    fetch_canada_ca.fetch_consultations,
+            "use_cache": True,
             "note":     "Showing open consultations with future deadlines, sorted soonest first.",
         },
         {
@@ -438,13 +457,13 @@ def collect_all() -> dict:
             "note":     "Active public consultations from the Department of Finance Canada.",
         },
         {
-            "id":       "ontario",
-            "label":    "Ontario Regulatory Registry — Open Proposals",
-            "icon":     "ON",
+            "id":       "ero",
+            "label":    "Environmental Registry of Ontario — Open Notices",
+            "icon":     "ERO",
             "color":    "#00698F",
-            "fetch":    fetch_ontario.fetch_proposals,
+            "fetch":    fetch_ero.fetch,
             "use_cache": True,
-            "note":     "All proposals currently accepting public comment.",
+            "note":     "Ontario regulatory proposals and policy proposals currently open for public comment.",
         },
         {
             "id":       "ontario_ca",
@@ -486,6 +505,16 @@ def collect_all() -> dict:
             "use_cache": True,
             "note":     "Active written hearing opportunities from National Housing Council review panels. Submissions may be made through the NHC website.",
         },
+        {
+            "id":       "nrcan",
+            "label":    "Natural Resources Canada — Consultations",
+            "icon":     "NRC",
+            "color":    "#2D6A4F",
+            "fetch":    fetch_nrcan.fetch,
+            "group":    "others",
+            "use_cache": True,
+            "note":     "Ongoing public consultations and engagements posted by Natural Resources Canada.",
+        },
     ]
 
     for src in sources:
@@ -500,8 +529,8 @@ def collect_all() -> dict:
 
         if use_cache:
             if items:
-                # Fresh results — update the cache for this source
-                updated_cache[src["id"]] = items
+                # Fresh results — store shallow copies (before processing adds private keys)
+                updated_cache[src["id"]] = [dict(item) for item in items]
             else:
                 # Nothing returned — fall back to last good results
                 cached = source_cache.get(src["id"], [])
@@ -580,7 +609,7 @@ def collect_all() -> dict:
         "label":           "Other Sources",
         "icon":            "+",
         "color":           "#555555",
-        "note":            "CRTC open consultations and National Housing Council review panel hearings.",
+        "note":            "CRTC open consultations, National Housing Council review panel hearings, and Natural Resources Canada consultations.",
         "entries":         others_entries,
         "count":           others_count,
         "filtered_count":  others_filtered_count,
