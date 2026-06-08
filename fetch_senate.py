@@ -27,7 +27,8 @@ BASE_URL    = "https://sencanada.ca"
 SESSION     = "45-1"                  # 45th Parliament, 1st Session
 SESSION_START = date(2025, 5, 26)     # Update this when a new session begins
 
-STUDIES_API = f"{BASE_URL}/umbraco/surface/CommitteesAjax/GetTablePartialView"
+STUDIES_API   = f"{BASE_URL}/umbraco/surface/CommitteesAjax/GetTablePartialView"
+LEGISINFO_BASE = "https://www.parl.ca/legisinfo/en/bill"
 
 # Only return studies referred within this many days (Order of Reference date).
 RECENT_DAYS = 30
@@ -55,6 +56,16 @@ def get_committee_acronym(href: str) -> str:
     """Extract committee acronym from a Senate URL like /en/committees/amad/"""
     m = re.search(r"/committees/([a-zA-Z]+)/?", href)
     return m.group(1).upper() if m else ""
+
+
+def make_bill_url(title: str) -> str | None:
+    """Return a LEGISinfo URL if the title is a bill referral (e.g. 'Bill C-234, An Act...')."""
+    m = re.search(r"Bill\s+([CS])-(\d+)", title, re.IGNORECASE)
+    if m:
+        letter = m.group(1).lower()
+        number = m.group(2)
+        return f"{LEGISINFO_BASE}/{SESSION}/{letter}-{number}"
+    return None
 
 
 def format_date(d: date) -> str:
@@ -140,6 +151,7 @@ def fetch_studies() -> list[dict]:
             "oor_label":     oor_label,
             "url":           clean_committee_url,
             "committee_url": clean_committee_url,
+            "bill_url":      make_bill_url(title),
         })
 
     # Keep only studies referred in the last RECENT_DAYS days
