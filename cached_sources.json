@@ -1,43 +1,13 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "sources": {
     "canada_ca": [
-      {
-        "source": "Canada.ca -- Federal Consultations",
-        "title": "Upper Beaver Gold Project\r\nPublic notice\r\nParticipant funding available",
-        "department": "Impact Assessment Agency of Canada",
-        "summary": "July 3, 2026 — Funding provided by the Impact Assessment Agency of Canada (IAAC) is now available to help Indigenous Peoples and the public participate in the impact assessment for the proposed Upper Beaver Gold Project, located 19 kilometers east of Kirkland Lake, Ontario.",
-        "deadline": "August 03, 2026  (closes TODAY)",
-        "start_date": "July 03, 2026",
-        "status": "Open",
-        "url": "https://iaac-aeic.gc.ca/050/evaluations/document/167025?culture=en-CA"
-      },
-      {
-        "source": "Canada.ca -- Federal Consultations",
-        "title": "Consultation on Level 1 and 2 Electric Vehicle Supply Equipment (EVSE) Inspection Specifications and Procedures",
-        "department": "Innovation, Science and Economic Development Canada",
-        "summary": "Measurement Canada is consulting on proposed specifications and test procedures for the verifications/reverification inspections of Level 1 and 2 alternating current (AC) electric vehicle (EV) charging devices that will be used to charge customers based on the amount of electricity (i.e., by kilowatt-hour or kWh) consumed during an EV charge. Comments provided will be used to finalize the requi...",
-        "deadline": "August 03, 2026  (closes TODAY)",
-        "start_date": "June 08, 2026",
-        "status": "Open",
-        "url": "https://ised-isde.canada.ca/site/measurement-canada/en/consultations/consultation-proposed-level-1-and-2-alternating-current-ac-electric-vehicle-supply-equipment-evse"
-      },
-      {
-        "source": "Canada.ca -- Federal Consultations",
-        "title": "Consultation on Electric Vehicle Supply Equipment (EVSE) Type-Approval Specifications",
-        "department": "Innovation, Science and Economic Development Canada",
-        "summary": "Measurement Canada is consulting on proposed specifications for the type approval of  electric vehicle (EV) supply equipment,  that will be used to bill customers based on the amount of electricity (i.e., by kilowatt-hour or kWh) delivered during an EV charge. Comments provided will be used to finalize the requirements that must be met during type approval examinations.",
-        "deadline": "August 03, 2026  (closes TODAY)",
-        "start_date": "June 08, 2026",
-        "status": "Open",
-        "url": "https://ised-isde.canada.ca/site/measurement-canada/en/consultations/consultation-follow-proposed-changes-specifications-approval-type-electric-vehicle-supply-equipment"
-      },
       {
         "source": "Canada.ca -- Federal Consultations",
         "title": "Share your thoughts: Proposed new livestock feed ingredient –  Quillaja saponaria wood powder",
         "department": "Canadian Food Inspection Agency",
         "summary": "We are seeking comments on the proposed new single ingredient feed (SIF) description for Quillaja saponaria wood powder",
-        "deadline": "August 04, 2026  (1 days remaining)",
+        "deadline": "August 04, 2026  (closes TODAY)",
         "start_date": "July 22, 2026",
         "status": "Open",
         "url": "https://inspection.canada.ca/en/about-cfia/transparency/consultations-and-engagement/quillaja-saponaria"
@@ -47,7 +17,7 @@
         "title": "Regional Assessment of Oil and Gas Exploratory Drilling in the Canada-Nova Scotia Offshore Area\r\nPublic notice\r\nParticipant funding available",
         "department": "Impact Assessment Agency of Canada",
         "summary": "July 8, 2026 — Funding provided by the Impact Assessment Agency of Canada (IAAC) is now available to help Indigenous Peoples and the public participate in the Regional Assessment of Oil and Gas Exploratory Drilling in the Canada-Nova Scotia Offshore Area. IAAC is leading the assessment in collaboration with the Nova Scotia Department of Energy, Natural Resources Canada and the Canada-Nova Scoti...",
-        "deadline": "August 07, 2026  (4 days remaining)",
+        "deadline": "August 07, 2026  (3 days remaining)",
         "start_date": "July 08, 2026",
         "status": "Open",
         "url": "https://iaac-aeic.gc.ca/050/evaluations/document/167072?culture=en-CA"
@@ -57,7 +27,7 @@
         "title": "Amendments to the Aircraft Marking and Registration Standard",
         "department": "Transport Canada",
         "summary": "The key objective of this proposal is to align Standard 222 with the proposed changes published in Canada Gazette, Part I, Volume 160, \r\nNumber 12: Regulations Amending the Canadian Aviation Regulations (Part II).",
-        "deadline": "August 07, 2026  (4 days remaining)",
+        "deadline": "August 07, 2026  (3 days remaining)",
         "start_date": "July 08, 2026",
         "status": "Open",
         "url": "https://wwwapps.tc.gc.ca/Saf-Sec-Sur/2/NPA-APM/npaapmr.aspx?id=3074&GoCTemplateCulture=en-CA"
@@ -67,7 +37,7 @@
         "title": "Share your ideas: National Strategy Respecting Environmental Racism and Environmental Justice",
         "department": "Environment and Climate Change Canada",
         "summary": "The Minister is developing a national strategy (the Strategy) to promote efforts across Canada to advance environmental justice and to assess, prevent, and address environmental racism.  Drawing from engagement and analysis over the last several years, a draft version of the Strategy has been published. The public is invited to read the draft Strategy and provide feedback, which will be reviewe...",
-        "deadline": "August 10, 2026  (7 days remaining)",
+        "deadline": "August 10, 2026  (6 days remaining)",
         "start_date": "July 02, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/environment-climate-change/corporate/transparency/consultations/environmental-justice-draft-national-strategy.html"
@@ -77,7 +47,7 @@
         "title": "Consultation: Recommendations for nuclear emergency protection strategies in Canada",
         "department": "Health Canada",
         "summary": "Health Canada is seeking input on our updated recommendations for nuclear emergency protection strategies. The document open for consultation is an update to our 2018 guidance document: Generic Criteria and Operational Intervention Levels (OILs) for Nuclear Emergency Planning and Response. That guidance recommended criteria that could be compared to radiation measurements or calculations to sup...",
-        "deadline": "August 10, 2026  (7 days remaining)",
+        "deadline": "August 10, 2026  (6 days remaining)",
         "start_date": "July 10, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/health-canada/programs/consultation-recommendations-nuclear-emergency-protection-strategies.html"
@@ -87,7 +57,7 @@
         "title": "Share your thoughts about making consumer protections clearer for Canadians",
         "department": "Canadian Radio-television and Telecommunications Commission",
         "summary": "The CRTC has created four consumer protection codes (the Wireless Code, the Internet Code, the Deposit and Disconnection Code, and the Television Service Provider Code) that set out Canadians’ rights and responsibilities, and what they can expect from their service providers.\r\n\r\nWe are seeking your comments on bringing these existing protections into a single code. The CRTC aims to make consume...",
-        "deadline": "August 11, 2026  (8 days remaining)",
+        "deadline": "August 11, 2026  (7 days remaining)",
         "start_date": "June 12, 2026",
         "status": "Open",
         "url": "https://crtc.gc.ca/eng/consultation/harmoni.htm"
@@ -97,7 +67,7 @@
         "title": "Consultation on Deltamethrin, Ultratec 5SC MUP and Raid Bug Defense, Proposed Registration Decision PRD2026-12",
         "department": "Health Canada",
         "summary": "Health Canada is proposing registration for the sale and use of Deltamethrin Technical Insecticide, Ultratec 5SC MUP, and Raid Bug Defense, containing the active ingredient deltamethrin, to control ants, cockroaches, house flies, stable flies and spiders on and around the home (outdoors only).",
-        "deadline": "August 16, 2026  (13 days remaining)",
+        "deadline": "August 16, 2026  (12 days remaining)",
         "start_date": "July 17, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/pesticides-pest-management/public/consultations/proposed-registration-decisions/2026/deltamethrin-ultratec-5sc-mup-raid-bug-defense.html"
@@ -107,7 +77,7 @@
         "title": "Public consultations on the Government of Canada's administration of the tariff-rate quotas for certain steel goods listed in item 82 of the Import Control List",
         "department": "Global Affairs Canada",
         "summary": "The Government of Canada is soliciting the views of the Canadian public and other interested parties on the allocation and administration of the import tariff-rate quotas for certain steel goods that are listed in item 82 on the Import Control List (ICL). The submissions received during the consultation process will be used to inform the Government of Canada's potential development of a policy ...",
-        "deadline": "August 19, 2026  (16 days remaining)",
+        "deadline": "August 19, 2026  (15 days remaining)",
         "start_date": "July 23, 2026",
         "status": "Open",
         "url": "https://international.canada.ca/en/global-affairs/consultations/trade/2026-07-09-steel-goods"
@@ -117,7 +87,7 @@
         "title": "Internal Liquidity Adequacy Assessment Process (ILAAP) for Deposit-Taking Institutions – Guideline (2027)",
         "department": "Office of the Superintendent of Financial Institutions Canada",
         "summary": "The Office of the Superintendent of Financial Institutions (OSFI) is launching a 90-day public consultation on the draft Internal Liquidity Adequacy Assessment Process (ILAAP) Guideline. The guideline sets out a clear structure for how institutions should assess, manage, and report on their liquidity risks, beyond minimum regulatory requirements. It also helps OSFI take a more consistent approa...",
-        "deadline": "August 19, 2026  (16 days remaining)",
+        "deadline": "August 19, 2026  (15 days remaining)",
         "start_date": "May 21, 2026",
         "status": "Open",
         "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/internal-liquidity-adequacy-assessment-process-ilaap-deposit-taking-institutions-guideline-2027"
@@ -127,7 +97,7 @@
         "title": "Guideline B-2 – Large Exposure Limits (2028)",
         "department": "Office of the Superintendent of Financial Institutions Canada",
         "summary": "The Office of the Superintendent of Financial Institutions (OSFI) is launching a 90 day public consultation on the draft revised Guideline B 2 – Large Exposure Limits. The proposed revisions build on the January 2019 version of Guideline B-2 that applies to domestic systemically important banks (DSIBs). The draft amendments extend the guideline’s scope to include Category 1 and Category 2 small...",
-        "deadline": "August 19, 2026  (16 days remaining)",
+        "deadline": "August 19, 2026  (15 days remaining)",
         "start_date": "May 21, 2026",
         "status": "Open",
         "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/large-exposure-limits-guideline-2028"
@@ -137,7 +107,7 @@
         "title": "Strengthening transportation security clearances for One Canadian Economy",
         "department": "Transport Canada",
         "summary": "Transport Canada is proposing to modernize the Transportation Security Clearance Program. We are proposing to address current limitations in the program by expanding risk assessments, broadening the use of security clearances, supporting information sharing, and improving program integrity. These changes would help partners work together, make better use of information, and help us better manag...",
-        "deadline": "August 20, 2026  (17 days remaining)",
+        "deadline": "August 20, 2026  (16 days remaining)",
         "start_date": "July 19, 2026",
         "status": "Open",
         "url": "https://tc.canada.ca/en/corporate-services/consultations/strengthening-one-canadian-economy-through-trade-transportation/discussion-paper-strengthening-transportation-security-clearances-one-canadian-economy"
@@ -147,7 +117,7 @@
         "title": "Public consultation on potential due diligence and civil liability measures to fight labour exploitation in supply chains",
         "department": "Employment and Social Development Canada",
         "summary": "The Government of Canada is seeking your views on potential due diligence measures that would require Canadian businesses operating abroad to identify, prevent, address and remediate risks to fundamental labour rights across their operations and supply chains.\r\n\r\nThe consultations will focus on the main elements of a potential regime, including: \r\n•\tthe scope of the obligations; \r\n•\tthe organiz...",
-        "deadline": "August 21, 2026  (18 days remaining)",
+        "deadline": "August 21, 2026  (17 days remaining)",
         "start_date": "July 27, 2026",
         "status": "Open",
         "url": "Share your views: Measures to address forced labour and labour exploitation in global supply chains"
@@ -157,7 +127,7 @@
         "title": "Share your views: Measures to address forced labour and labour exploitation in global supply chains",
         "department": "Global Affairs Canada",
         "summary": "The Government is seeking your views on two distinct, yet complimentary measures to address forced labour and labour exploitation in global supply chains: (1) regulatory approach under Bill C-35 An Act respecting the prohibition of the importation of goods produced by forced labour (2) Potential due dilligence legislation and civil liability measures to fight labour exploitation in supply chains.",
-        "deadline": "August 21, 2026  (18 days remaining)",
+        "deadline": "August 21, 2026  (17 days remaining)",
         "start_date": "July 27, 2026",
         "status": "Open",
         "url": "https://international.canada.ca/en/global-affairs/consultations/trade/2026-07-27-forced-labour"
@@ -167,7 +137,7 @@
         "title": "Share your thoughts: Proposed amended livestock feed ingredients –yucca-based ingredients",
         "department": "Canadian Food Inspection Agency",
         "summary": "We are seeking comments on the proposed amended single ingredient feed (SIF) descriptions for yucca-based ingredients",
-        "deadline": "August 24, 2026  (21 days remaining)",
+        "deadline": "August 24, 2026  (20 days remaining)",
         "start_date": "July 22, 2026",
         "status": "Open",
         "url": "Share your thoughts: Proposed amended livestock feed ingredients – Yucca-based ingredients - inspection.canada.ca"
@@ -177,7 +147,7 @@
         "title": "Share your thoughts: Proposed new livestock feed ingredient –L-lysine solution from fermentation process",
         "department": "Canadian Food Inspection Agency",
         "summary": "We are seeking comments on the proposed new single ingredient feed (SIF) description for l-lysine solution from fermentation process",
-        "deadline": "August 24, 2026  (21 days remaining)",
+        "deadline": "August 24, 2026  (20 days remaining)",
         "start_date": "July 22, 2026",
         "status": "Open",
         "url": "Share your thoughts: Proposed new livestock feed ingredient – L-Lysine solution from fermentation process - inspection.canada.ca"
@@ -187,7 +157,7 @@
         "title": "Share your ideas: Amendments to the Metal and Diamond Mining Effluent Regulations for the Great Bear Gold Project",
         "department": "Environment and Climate Change Canada",
         "summary": "Environment and Climate Change Canada (ECCC) is seeking comments from the public and Indigenous Nations on a proposed authorization under the Metal and Diamond Mining Effluent Regulations (MDMER) for the disposal of mine waste at the Great Bear mine site.",
-        "deadline": "August 25, 2026  (22 days remaining)",
+        "deadline": "August 25, 2026  (21 days remaining)",
         "start_date": "June 23, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/environment-climate-change/corporate/transparency/consultations/amendments-metal-diamond-mining-effluent-regulations-great-bear-gold-project.html"
@@ -197,7 +167,7 @@
         "title": "Consultation on Amendments to the Tower Siting Process and Decision on Roaming, Tower sharing and Annual Reporting Requirements for Terrestrial Licences",
         "department": "Innovation, Science and Economic Development Canada",
         "summary": "Consultation relative aux modifications du processus régissant l’emplacement des pylônes d’antennes et à la décision sur l’itinérance, le partage des pylônes et les exigences en matière de rapports annuels pour les licences terrestres",
-        "deadline": "August 25, 2026  (22 days remaining)",
+        "deadline": "August 25, 2026  (21 days remaining)",
         "start_date": "May 11, 2026",
         "status": "Open",
         "url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/learn-more/key-documents/consultations/consultation-amendments-tower-siting-process-and-decision-roaming-tower-sharing-and-annual-reporting"
@@ -207,7 +177,7 @@
         "title": "Regulations Amending the Safe Food for Canadians Regulations (Unmet Slaughter Capacity)",
         "department": "Canadian Food Inspection Agency",
         "summary": "Seeking comments on the proposed amendments to the Safe Food for Canadians Regulations (SFCR) to reduce barriers to the interprovincial trade of red meat when there is unmet slaughter capacity, and to reduce red tape and improve regulatory clarity, published in the Canada Gazette, Part 1, Volume 160, Number 26 on June 27, 2026.",
-        "deadline": "August 26, 2026  (23 days remaining)",
+        "deadline": "August 26, 2026  (22 days remaining)",
         "start_date": "June 27, 2026",
         "status": "Open",
         "url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-06-27/html/reg1-eng.html"
@@ -217,7 +187,7 @@
         "title": "Pre-publication in the Canada Gazette, Part I of the Regulations Amending the Energy Efficiency Regulation, 2016 (Amendment 19)",
         "department": "Natural Resources Canada",
         "summary": "This is the 70-day public comment period after the pre-publication of the Regulations in the Canada Gazette, Part I",
-        "deadline": "August 29, 2026  (26 days remaining)",
+        "deadline": "August 29, 2026  (25 days remaining)",
         "start_date": "June 20, 2026",
         "status": "Open",
         "url": "Canada Gazette, Part 1, Volume 160, Number 25: Regulations Amending the Energy Efficiency Regulation, 2016 (Amendment 19)"
@@ -227,7 +197,7 @@
         "title": "Share your thoughts: Proposed amended livestock feed ingredients –  Carotenoid based pigments",
         "department": "Canadian Food Inspection Agency",
         "summary": "We are seeking comments on the following amended single ingredient feed (SIF) for 13 Carotenoid based pigments",
-        "deadline": "August 30, 2026  (27 days remaining)",
+        "deadline": "August 30, 2026  (26 days remaining)",
         "start_date": "July 31, 2026",
         "status": "Open",
         "url": "https://inspection.canada.ca/en/about-cfia/transparency/consultations-and-engagement/carotenoid-related-ingredients"
@@ -237,7 +207,7 @@
         "title": "Assistance to Aircraft Accident Victims and their Families",
         "department": "Transport Canada",
         "summary": "Transport Canada wants to engage with individuals who have experience either receiving or delivering assistance following an aircraft accident or similar tragedy in Canada. This will help in developing new guidance for air and airport operators in the delivery of assistance to aircraft accident victims and their families.",
-        "deadline": "August 31, 2026  (28 days remaining)",
+        "deadline": "August 31, 2026  (27 days remaining)",
         "start_date": "July 19, 2026",
         "status": "Open",
         "url": "https://tc.canada.ca/en/corporate-services/consultations/assistance-aircraft-accident-victims-their-families"
@@ -247,7 +217,7 @@
         "title": "2SLGBTQI+ community needs",
         "department": "Women and Gender Equality Canada",
         "summary": "This consultation provides an opportunity for Canadians to shape how 2SLGBTQI+ communities are supported nationwide. By gathering diverse perspectives on persistent gaps and emerging priorities, this initiative ensures that future actions truly reflect the evolving needs, lived experiences, and collective aspirations of 2SLGBTQI+ communities from coast to coast to coast.",
-        "deadline": "August 31, 2026  (28 days remaining)",
+        "deadline": "August 31, 2026  (27 days remaining)",
         "start_date": "July 09, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/women-gender-equality/free-to-be-me/2slgbtqi-plus-sharing-ideas.html"
@@ -257,7 +227,7 @@
         "title": "Construction of a new fishing harbour in Natashquan",
         "department": "Fisheries and Oceans Canada",
         "summary": "The Small Craft Harbours Branch of Fisheries and Oceans Canada would like to invite comments, questions or concerns from the public regarding this project.",
-        "deadline": "September 01, 2026  (29 days remaining)",
+        "deadline": "September 01, 2026  (28 days remaining)",
         "start_date": "April 10, 2026",
         "status": "Open",
         "url": "https://www.iaac-aeic.gc.ca/050/evaluations/proj/90362"
@@ -267,7 +237,7 @@
         "title": "Engagement with stakeholders and partners on an alternative selection approach for the post-graduation work permit (PGWP)",
         "department": "Immigration, Refugees and Citizenship Canada",
         "summary": "Immigration, Refugees and Citizenship Canada (IRCC) is engaging stakeholders and partners to shape changes to the post-graduation work permit (PGWP).",
-        "deadline": "September 01, 2026  (29 days remaining)",
+        "deadline": "September 01, 2026  (28 days remaining)",
         "start_date": "March 17, 2026",
         "status": "Open",
         "url": "N/A"
@@ -277,7 +247,7 @@
         "title": "Consultation on spiropidion, Proposed Maximum Residue Limit PMRL2026-07",
         "department": "Health Canada",
         "summary": "Health Canada is consulting the public and seeking your feedback on proposed maximum residue limit (MRL) increases for the foliar uses of spiropidion on bell peppers, non-bell peppers, tomatoes (and its processed commodity tomato paste), cantaloupes, cucumbers, muskmelons, pumpkins, watermelons and winter squash grown in Canada.",
-        "deadline": "September 06, 2026  (34 days remaining)",
+        "deadline": "September 06, 2026  (33 days remaining)",
         "start_date": "June 23, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/pesticides-pest-management/public/consultations/proposed-maximum-residue-limit/2026/spiropidion.html"
@@ -287,7 +257,7 @@
         "title": "2026 Pre-Budget Consultations",
         "department": "Department of Finance Canada",
         "summary": "This fall, the Government of Canada will deliver Budget 2026, which will update Canadians on the government’s progress on its plan to Build Canada Strong over the past year, while continuing to support Canadians and businesses and positioning the country for long-term prosperity. This includes measures that strengthen economic growth, improve affordability, and support the next generation of Ca...",
-        "deadline": "September 08, 2026  (36 days remaining)",
+        "deadline": "September 08, 2026  (35 days remaining)",
         "start_date": "July 06, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html"
@@ -297,7 +267,7 @@
         "title": "RPAS: Remote Identification, Community-Based  Organizations, and Designated Airspace",
         "department": "Transport Canada",
         "summary": "The first objective of the regulatory proposal is to continue safely integrating RPAS in Canadian \r\nairspace through identification and positioning of RPAS, which would improve pilot awareness and \r\naccountability and support oversight and enforcement. This would, in turn, help increase public trust \r\nand social acceptance of RPAS.  \r\nThe second objective of this proposal is to address recreati...",
-        "deadline": "September 08, 2026  (36 days remaining)",
+        "deadline": "September 08, 2026  (35 days remaining)",
         "start_date": "June 07, 2026",
         "status": "Open",
         "url": "https://wwwapps.tc.gc.ca/Saf-Sec-Sur/2/NPA-APM/npaapmr.aspx?id=3073&GoCTemplateCulture=en-CA"
@@ -307,7 +277,7 @@
         "title": "Proposed changes to Canada’s Enhanced Feed Ban",
         "department": "Canadian Food Inspection Agency",
         "summary": "The Canadian Food Inspection Agency (CFIA) pre-published proposed amendments to Canada’s Enhanced Feed Ban (EFB) regulations in the Canada Gazette, Part I (CGI). A 60-day public consultation began July 11, 2026. These amendments update the Health of Animals Regulations, the Feeds Regulations, 2024, and the Fertilizers Regulations to allow the repurposing of a subset of specified risk material (...",
-        "deadline": "September 09, 2026  (37 days remaining)",
+        "deadline": "September 09, 2026  (36 days remaining)",
         "start_date": "July 11, 2026",
         "status": "Open",
         "url": "https://inspection.canada.ca/en/about-cfia/transparency/consultations-and-engagement/enhanced-feed-ban"
@@ -317,7 +287,7 @@
         "title": "Updating the Vancouver International Airport Zoning Regulations",
         "department": "Transport Canada",
         "summary": "The purpose of this consultation is to solicit feedback from stakeholders on Transport Canada's proposed changes to the Vancouver International Airport Zoning Regulations (VIAZR), which would limit the height of buildings and the natural growth of trees and vegetation on land surrounding the airport, to ensure safe aircraft landings.",
-        "deadline": "September 11, 2026  (39 days remaining)",
+        "deadline": "September 11, 2026  (38 days remaining)",
         "start_date": "July 13, 2026",
         "status": "Open",
         "url": "https://tc.canada.ca/en/corporate-services/consultations/updating-vancouver-international-airport-zoning-regulations"
@@ -327,7 +297,7 @@
         "title": "Consultation on ammonium bromide and its associated end-use products, Proposed Re-evaluation Decision PRVD2026-03",
         "department": "Health Canada",
         "summary": "Health Canada is holding a public consultation about keeping the approval of ammonium bromide and related commercial products approved for sale and use in Canada. Ammonium bromide is an important biocide registered for use in pulp and paper mills. Based on the current use-pattern of ammonium bromide, the potential dietary, occupational, residential and environmental risks are considered to be a...",
-        "deadline": "September 13, 2026  (41 days remaining)",
+        "deadline": "September 13, 2026  (40 days remaining)",
         "start_date": "June 15, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/health-canada/services/consumer-product-safety/pesticides-pest-management/public/consultations/proposed-re-evaluation-decisions/2026/ammonium-bromide.html"
@@ -337,7 +307,7 @@
         "title": "Public consultation on new Cartel Enforcement Guidelines",
         "department": "Innovation, Science and Economic Development Canada",
         "summary": "The Competition Bureau is launching a public consultation to get feedback from Canadians on its proposed Cartel Enforcement Guidelines. The guidelines provide information about how we enforce the cartel provisions of the Competition Act.",
-        "deadline": "September 13, 2026  (41 days remaining)",
+        "deadline": "September 13, 2026  (40 days remaining)",
         "start_date": "July 15, 2026",
         "status": "Open",
         "url": "https://competition-bureau.canada.ca/en/how-we-foster-competition/consultations/public-consultation-new-cartel-enforcement-guidelines"
@@ -347,7 +317,7 @@
         "title": "Consultation: Proposal to amend the Children’s Sleepwear Regulations under the Canada Consumer Product Safety Act",
         "department": "Health Canada",
         "summary": "The purpose of this consultation is to inform interested parties that Health Canada is seeking comments on a proposed regulatory initiative to update the Children’s Sleepwear Regulations under the Canada Consumer Product Safety Act (CCPSA).",
-        "deadline": "September 14, 2026  (42 days remaining)",
+        "deadline": "September 14, 2026  (41 days remaining)",
         "start_date": "July 07, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/health-canada/programs/consultation-proposal-amend-childrens-sleepwear-regulations.html"
@@ -357,7 +327,7 @@
         "title": "Consultation by Environment and Climate Change Canada on a proposal to develop a new regulation for the protection of critical habitat on applicable federal lands",
         "department": "Environment and Climate Change Canada",
         "summary": "Seeking comments from all interested parties and Indigenous peoples on the proposed Critical Habitat Protection Regulations (CHPR) under SARA. Comments received will support the drafting of the proposed regulation.",
-        "deadline": "September 16, 2026  (44 days remaining)",
+        "deadline": "September 16, 2026  (43 days remaining)",
         "start_date": "July 18, 2026",
         "status": "Open",
         "url": "https://species-registry.canada.ca/index-en.html#/documents/fV5FjjDxziF1i5irKeeVZ"
@@ -367,7 +337,7 @@
         "title": "Share your thoughts about developing an Indigenous stream of the Broadband Fund",
         "department": "Canadian Radio-television and Telecommunications Commission",
         "summary": "We are seeking your comments on developing an Indigenous stream of the Broadband Fund. We launched the Broadband Fund to help connect rural, remote, and Indigenous communities across Canada to high-speed Internet and cellphone services. The Indigenous stream will aim to make it easier for Indigenous communities to get connected to these services through the Broadband Fund.",
-        "deadline": "September 18, 2026  (46 days remaining)",
+        "deadline": "September 18, 2026  (45 days remaining)",
         "start_date": "March 18, 2026",
         "status": "Open",
         "url": "https://crtc.gc.ca/eng/consultation/indg-atch.htm"
@@ -377,7 +347,7 @@
         "title": "Fuel Quality Regulations Discussion Document",
         "department": "Environment and Climate Change Canada",
         "summary": "Solicit initial comments on ECCC's initiative to consolidate the five fuels regulations that control fuel quality in Canada into a single new regulation (Benzene in Gasoline Regulations, Fuels Information Regulations No. 1, Gasoline Regulations, Sulphur in Diesel Regulations, Sulphur in Gasoline Regulations).\r\nFor a copy of the discussion document, or if you have any comments, please do not hes...",
-        "deadline": "September 19, 2026  (47 days remaining)",
+        "deadline": "September 19, 2026  (46 days remaining)",
         "start_date": "July 21, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/environment-climate-change/corporate/transparency/priorities-management/policies-guidelines/red-tape-reduction-report.html#toc30"
@@ -387,7 +357,7 @@
         "title": "Consultation: Draft revised Quality of natural health products guide",
         "department": "Health Canada",
         "summary": "Health Canada is updating the 2015 guide on the Quality of natural health products. We are seeking your feedback on the draft revised guide.",
-        "deadline": "September 20, 2026  (48 days remaining)",
+        "deadline": "September 20, 2026  (47 days remaining)",
         "start_date": "July 20, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/health-canada/programs/draft-consultation-quality-natural-health-products-guide.html"
@@ -397,7 +367,7 @@
         "title": "Consultation on Alternate Service Delivery Programs, Part II",
         "department": "Innovation, Science and Economic Development Canada",
         "summary": "Measurement Canada is planning consultations related to the ASD program review. This second phase of the program review consultation will focus on new technologies, the use of statistical sampling, and training requirements for ASPs.",
-        "deadline": "September 21, 2026  (49 days remaining)",
+        "deadline": "September 21, 2026  (48 days remaining)",
         "start_date": "July 27, 2026",
         "status": "Open",
         "url": "N/A"
@@ -407,7 +377,7 @@
         "title": "Consultation on enhancing trust in artificial intelligence through increased transparency",
         "department": "Innovation, Science and Economic Development Canada",
         "summary": "In Canada's National Artificial Intelligence Strategy: AI for All, the Government commited to work on AI transparency, including capabilities like watermarking of AI-generated content, so Canadians can better understand when they are interacting with AI systems and AI-generated content. Through this consultation, Innovation, Science and Economic Development Canada is seeking views from Canadian...",
-        "deadline": "September 23, 2026  (51 days remaining)",
+        "deadline": "September 23, 2026  (50 days remaining)",
         "start_date": "July 23, 2026",
         "status": "Open",
         "url": "https://ised-isde.canada.ca/site/ised/en/have-your-say-advancing-ai-transparency-canada"
@@ -417,7 +387,7 @@
         "title": "Draft 2026 Remediation Process Guide",
         "department": "Canada Energy Regulator",
         "summary": "The Remediation Process Guide (RPG) is technical guidance providing the framework for regulated companies to demonstrate they are effectively anticipating, preventing, managing and mitigating the adverse effects of contamination related to their facilities, along with how to demonstrate remediation of contamination. The RPG explains the CER’s remediation process and reporting requirements, enga...",
-        "deadline": "October 05, 2026  (63 days remaining)",
+        "deadline": "October 05, 2026  (62 days remaining)",
         "start_date": "July 06, 2026",
         "status": "Open",
         "url": "https://www.cerdialogue.ca/remediation-process-guide-review"
@@ -427,7 +397,7 @@
         "title": "Consultation on Amending the List of Species under the Species at Risk Act: Terrestrial Species January 2026",
         "department": "Environment and Climate Change Canada",
         "summary": "Annual consultation on the proposed modifications to the Schedule 1 of the Species at Risk Act (pre-listing consultations).",
-        "deadline": "October 14, 2026  (72 days remaining)",
+        "deadline": "October 14, 2026  (71 days remaining)",
         "start_date": "January 14, 2026",
         "status": "Open",
         "url": "https://species-registry.canada.ca/index-en.html#/documents/wldyX0JgFdbCyk7E48LxX"
@@ -437,7 +407,7 @@
         "title": "Consultative document on Senior Leader Accountability",
         "department": "Office of the Superintendent of Financial Institutions Canada",
         "summary": "The Office of the Superintendent of Financial Institutions (OSFI) is issuing a consultative document on senior leader accountability. This nine-month consultation focuses on a principles-based regime to modernize suitability and accountability standards for senior leaders of federally regulated financial institutions. This regime is a subset of OSFI’s broader corporate governance work, but one ...",
-        "deadline": "October 31, 2026  (89 days remaining)",
+        "deadline": "October 31, 2026  (88 days remaining)",
         "start_date": "January 29, 2026",
         "status": "Open",
         "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library/consultative-document-proposed-senior-leader-regime"
@@ -447,7 +417,7 @@
         "title": "Streamlining work and study authorizations for international students",
         "department": "Immigration, Refugees and Citizenship Canada",
         "summary": "Immigration, Refugees and Citizenship Canada (IRCC) is engaging stakeholders and partners on the regulatory proposal to streamline work and study authorizations and other housekeeping amendments related to international students.",
-        "deadline": "December 31, 2026  (150 days remaining)",
+        "deadline": "December 31, 2026  (149 days remaining)",
         "start_date": "March 17, 2026",
         "status": "Open",
         "url": "N/A"
@@ -457,7 +427,7 @@
         "title": "Indian Oil and Gas Regulation Amendments: Environment and Surface",
         "department": "Indigenous Services Canada",
         "summary": "Amendments to the Indian Oil and Gas Regulations relating to the protection of the Environment and Surface contracts administration",
-        "deadline": "December 31, 2026  (150 days remaining)",
+        "deadline": "December 31, 2026  (149 days remaining)",
         "start_date": "October 01, 2025",
         "status": "Open",
         "url": "N/A"
@@ -467,7 +437,7 @@
         "title": "Canada-NS and Canada-NL Offshore Renewable Energy Regulations",
         "department": "Natural Resources Canada",
         "summary": "These regulations will support the implementation of Part 3 of the Accord Acts, as amended by Bill C-49, and will establish requirements to ensure the safety and environmental protection of offshore renewable energy projects in the two offshore areas that are jointly managed with Nova Scotia and Newfoundland and Labrador.",
-        "deadline": "December 31, 2026  (150 days remaining)",
+        "deadline": "December 31, 2026  (149 days remaining)",
         "start_date": "May 01, 2022",
         "status": "Open",
         "url": "https://natural-resources.canada.ca/energy-sources/renewable-energy/offshore-renewable-energy-regulations-initiative"
@@ -477,7 +447,7 @@
         "title": "Bill S-4 An Act to Amend the Energy Efficiency Act.",
         "department": "Natural Resources Canada",
         "summary": "Bill S-4 was introduced in the Senate on November 26, 2025. \r\nThis enactment amends the Energy Efficiency Act to, among other things,\r\n\r\n(a) enable the Minister of Natural Resources to provide for exemptions from the application of that Act and its regulations with the aim of facilitating the design and efficient administration of a regulatory regime to encourage innovation, competitiveness and...",
-        "deadline": "December 31, 2026  (150 days remaining)",
+        "deadline": "December 31, 2026  (149 days remaining)",
         "start_date": "December 18, 2025",
         "status": "Open",
         "url": "N/A"
@@ -487,7 +457,7 @@
         "title": "National Soil Health Strategy FPT and Stakeholder Engagement Session",
         "department": "Agriculture and Agri-Food Canada",
         "summary": "As part of the development of a National Agricultural Soil Health Strategy announced by the Minister of Agriculture\r\nand Agri-Food, a virtual federal provincial territorial and stakeholder engagement session was held to support a\r\ncoordinated national approach to soil health. Led by AAFC, in collaboration with industry partners, the session brought together government officials, researchers, an...",
-        "deadline": "March 31, 2027  (240 days remaining)",
+        "deadline": "March 31, 2027  (239 days remaining)",
         "start_date": "March 30, 2026",
         "status": "Open",
         "url": "N/A"
@@ -497,7 +467,7 @@
         "title": "White River First Nations",
         "department": "Canada Border Services Agency",
         "summary": "Engagement with the White River First Nation as part of the Government of Canada delegation to the Recognition of Indigenous Rights and Self Determination Table led by Crown Indigenous Relations and Northern Affairs Canada. Specifically, a CBSA-led ‘Border Crossing Issues Side Table’ relating to First Nations Border Crossing Issues as examined in the 2017 Minister's Special Representative's rep...",
-        "deadline": "March 31, 2027  (240 days remaining)",
+        "deadline": "March 31, 2027  (239 days remaining)",
         "start_date": "February 01, 2021",
         "status": "Open",
         "url": "https://www.rcaanc-cirnac.gc.ca/eng/1511969222951/1529103469169"
@@ -507,7 +477,7 @@
         "title": "Stakeholder engagement on potential marine conservation areas in Newfoundland and Labrador Region",
         "department": "Fisheries and Oceans Canada",
         "summary": "Engagement with external stakeholder groups to guage interest in establishing new marine conservation sites in Newfoundland and Labrador Region in support of the Government of Canada's 30% by 2030 target.",
-        "deadline": "March 31, 2027  (240 days remaining)",
+        "deadline": "March 31, 2027  (239 days remaining)",
         "start_date": "February 01, 2025",
         "status": "Open",
         "url": "https://www.dfo-mpo.gc.ca/oceans/conservation/plan/index-eng.html"
@@ -517,7 +487,7 @@
         "title": "Accelerated Growth Service Point of Service Surveys",
         "department": "Innovation, Science and Economic Development Canada",
         "summary": "The Acceleted Growth Service (AGS) aims to assess program effectiveness at serving client firms according to the following engagement timelines:\r\n\r\ni. Post-Advisory Service engagement to determine client satisfaction with typically one-off conversations and referrals\r\nii.\tPost-Service Plan Delivery to gather immediate feedback on the AGS Service Plan, including how clear, relevant, and useful t...",
-        "deadline": "March 31, 2027  (240 days remaining)",
+        "deadline": "March 31, 2027  (239 days remaining)",
         "start_date": "January 01, 2025",
         "status": "Open",
         "url": "N/A"
@@ -527,7 +497,7 @@
         "title": "Update of the MEND Prediction Manual for Drainage Chemistry from Sulphidic Geologic Materials (MEND 1.20.1)",
         "department": "Natural Resources Canada",
         "summary": "A comprehensive update of Canada's primary technical reference for predicting and managing drainage chemistry from mine waste, modernizing methods, broadening scope, and improving accessibility for all users.",
-        "deadline": "March 31, 2027  (240 days remaining)",
+        "deadline": "March 31, 2027  (239 days remaining)",
         "start_date": "September 29, 2025",
         "status": "Open",
         "url": "N/A"
@@ -537,7 +507,7 @@
         "title": "Environmental Geochemistry Data Digitization in Support of Mine Permitting",
         "department": "Natural Resources Canada",
         "summary": "To digitize and standardize historical environmental geochemistry data to support evidence-based decision-making in Canadian mine permitting and impact assessment processes.",
-        "deadline": "March 31, 2027  (240 days remaining)",
+        "deadline": "March 31, 2027  (239 days remaining)",
         "start_date": "April 01, 2021",
         "status": "Open",
         "url": "N/A"
@@ -547,7 +517,7 @@
         "title": "Three-year Departmental Accessibility Plan",
         "department": "Public Services and Procurement Canada",
         "summary": "The Accessible Canada Act and Regulations require federal organizations to post their plans and establish a process that supports transparency and allows individuals to provide feedback by mail, telephone, email or in any manner that the organization uses to communicate with the public. \r\n\r\nPublic insight into the Department’s plans and processes is essential in ensuring that the Department con...",
-        "deadline": "March 31, 2027  (240 days remaining)",
+        "deadline": "March 31, 2027  (239 days remaining)",
         "start_date": "April 01, 2026",
         "status": "Open",
         "url": "https://www.canada.ca/en/public-services-procurement/corporate/accessibility.html"
@@ -557,7 +527,7 @@
         "title": "Mary River Mine Fugitive Dust Research: Bridging Western Science, Industry Monitoring and Inuit Qaujimajatuqangit",
         "department": "Natural Resources Canada",
         "summary": "Natural Resources Canada engaged and consulted partners and stakeholders to co-develop a mine dust monitoring project around the Mary River Project, North Baffin Island. The goal of these engagements was to ensure the research porject was designed to address both industry and communitty research questions, and ensure the project was collaborative in nature. This has been achieved through worksh...",
-        "deadline": "April 01, 2027  (241 days remaining)",
+        "deadline": "April 01, 2027  (240 days remaining)",
         "start_date": "December 01, 2022",
         "status": "Open",
         "url": "N/A"
@@ -567,7 +537,7 @@
         "title": "Regulatory Framework Plan",
         "department": "Canada Energy Regulator",
         "summary": "The Regulatory Framework Plan (RF Plan) is a tool produced by the CER that supports planning and communication. The RF Plan describes which regulations, guidance material and other regulatory documents we intend to amend or develop over a three year period, and sets out expected timelines for each. The CER welcomes  feedback on the content of the Regulatory Framework at any time.",
-        "deadline": "December 31, 2027  (515 days remaining)",
+        "deadline": "December 31, 2027  (514 days remaining)",
         "start_date": "June 16, 2021",
         "status": "Open",
         "url": "https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.cer-rec.gc.ca%2Fen%2Fabout%2Fhow-we-regulate%2Fplans-for-regulatory-framework%2F&data=05%7C02%7CMichelle.Shabits%40cer-rec.gc.ca%7Cec1c386ebea64452821d08dc41ebb1b9%7C56e9b8d38a3549abbdfc27de59608f01%7C0%7C0%7C638457728797041411%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=tKxvqtPetzkvcXlETiyyf51rWnRpUftsM2o2U5IySO4%3D&reserved=0"
@@ -577,7 +547,7 @@
         "title": "Regulated Industry Engagement",
         "department": "Canada Energy Regulator",
         "summary": "The CER is committed to enhancing Canada’s global competitiveness by improving transparency, predictability, and efficiency throughout the regulatory lifecycle, while driving innovation that contributes to the transition to a low carbon economy. The Government of Canada has also signaled its commitment to global competitiveness through the preamble of the Canadian Energy Regulator Act. These co...",
-        "deadline": "December 31, 2027  (515 days remaining)",
+        "deadline": "December 31, 2027  (514 days remaining)",
         "start_date": "April 01, 2023",
         "status": "Open",
         "url": "https://www.cer-rec.gc.ca/en/consultation-engagement/stakeholder-engagement/regulated-industry-engagement/index.html"
@@ -587,7 +557,7 @@
         "title": "Marine Planning Process in the Quebec Region",
         "department": "Fisheries and Oceans Canada",
         "summary": "Regional Harmonization Committee and Sectoral Committee to advance the first marine planning area in the Estuary and Gulf of St. Lawrence for the Quebec Region, in collaboration with certain coastal Indigenous communities, Indigenous organizations, and federal departments, as well as engagement with other stakeholders and organizations in the area.",
-        "deadline": "March 31, 2028  (606 days remaining)",
+        "deadline": "March 31, 2028  (605 days remaining)",
         "start_date": "January 01, 2026",
         "status": "Open",
         "url": "N/A"
@@ -597,7 +567,7 @@
         "title": "Canada in a Changing Climate",
         "department": "Natural Resources Canada",
         "summary": "Canada in a Changing Climate: Advancing our Knowledge for Action is the national assessment of how and why Canada’s climate is changing; the impacts of these changes on our communities, health, environment, and economy; and how we are adapting. Natural Resources Canada leads Canada in a Changing Climate, a process that depends on the collaboration of a broad partnership of subject-matter expert...",
-        "deadline": "May 31, 2028  (667 days remaining)",
+        "deadline": "May 31, 2028  (666 days remaining)",
         "start_date": "June 05, 2023",
         "status": "Open",
         "url": "https://natural-resources.canada.ca/climate-change/canada-changing-climate/canada-changing-climate-national-assessment-process"
@@ -607,7 +577,7 @@
         "title": "Canada's Energy Future 2026",
         "department": "Canada Energy Regulator",
         "summary": "Canada’s Energy Future 2026 is the flagship publication of the CER’s Energy System Information Program. It provides long-term projections of Canada’s energy supply and demand under multiple scenarios.  The report helps Canadians understand how energy markets, technologies, and policies could evolve, supporting informed decisions by governments, industry, Indigenous Peoples, and the public.  Ene...",
-        "deadline": "December 31, 2028  (881 days remaining)",
+        "deadline": "December 31, 2028  (880 days remaining)",
         "start_date": "June 20, 2024",
         "status": "Open",
         "url": "https://www.cerdialogue.ca/canada-s-energy-future"
@@ -617,7 +587,7 @@
         "title": "Invitation to participate in the revision of the National Occupational Classification (NOC)",
         "department": "Employment and Social Development Canada",
         "summary": "ESDC and Statistics Canada invited stakeholders to provide comments on the National Occupational Classification (NOC). These consultations take place on an ongoing basis; however, cut-off dates for the consideration of proposed changes are established before key revision dates. The next revision to the NOC will be in line with the 2031 Census.",
-        "deadline": "November 01, 2029  (1186 days remaining)",
+        "deadline": "November 01, 2029  (1185 days remaining)",
         "start_date": "November 16, 2024",
         "status": "Open",
         "url": "https://noc.esdc.gc.ca/Home/ParticipateInNOCConsultations"
@@ -627,7 +597,7 @@
         "title": "Participate in the permanent consultation for the revision of the Canadian Research and Development Classification (CRDC)",
         "department": "Statistics Canada",
         "summary": "This consultation aims to gather feedback from users who have already implemented the classification, as well as other interested parties who might want to suggest updates or changes to the Canadian Research and Development Classification (CRDC). Federal research funding agencies, Statistics Canada's statistical programs related to R&D data, members of the research community and their partners,...",
-        "deadline": "January 27, 2030  (1273 days remaining)",
+        "deadline": "January 27, 2030  (1272 days remaining)",
         "start_date": "January 27, 2025",
         "status": "Open",
         "url": "https://www.statcan.gc.ca/en/consultation/2025/crdc"
@@ -637,7 +607,7 @@
         "title": "Oceans Protection Plan",
         "department": "Transport Canada",
         "summary": "In November 2016, the $1.5-billion Oceans Protection Plan (OPP) was launched, the largest investment ever made to protect Canada’s coasts and waterways, while also growing our economy. On July 19, 2022, the Prime Minister announced that the Oceans Protection Plan was extended for another 9 years, with the goal of building upon results achieved so far and expanding into new areas. We invite all ...",
-        "deadline": "March 31, 2031  (1701 days remaining)",
+        "deadline": "March 31, 2031  (1700 days remaining)",
         "start_date": "September 01, 2017",
         "status": "Open",
         "url": "https://consultations.tc.canada.ca/en/consultation/let-s-talk-oceans-protection-plan"
@@ -649,7 +619,7 @@
         "title": "Consultation on Proposed Governance Regulations for Regional Conservation Authorities and the Ontario Provincial Conservation Agency",
         "department": "Government of Ontario",
         "summary": "Regulation",
-        "deadline": "September 12, 2026 (40 days remaining)",
+        "deadline": "September 12, 2026 (39 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0740"
       },
       {
@@ -657,7 +627,7 @@
         "title": "Dryden Gold Corp. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0816"
       },
       {
@@ -665,7 +635,7 @@
         "title": "Dryden Gold Corp. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0814"
       },
       {
@@ -673,7 +643,7 @@
         "title": "Dryden Gold Corp. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0815"
       },
       {
@@ -681,7 +651,7 @@
         "title": "Steve McArthur - New - Approval for a consent (subject to conditions) in an area where there is no official plan in place",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0507"
       },
       {
@@ -689,7 +659,7 @@
         "title": "GOLFNORTH PROPERTIES INC. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 29, 2026 (26 days remaining)",
+        "deadline": "August 29, 2026 (25 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0802"
       },
       {
@@ -697,7 +667,7 @@
         "title": "SOMERHILL GOLF CLUB LTD. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 29, 2026 (26 days remaining)",
+        "deadline": "August 29, 2026 (25 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0789"
       },
       {
@@ -705,7 +675,7 @@
         "title": "Vale Canada Limited Vale Canada Limitee - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 13, 2026 (41 days remaining)",
+        "deadline": "September 13, 2026 (40 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0806"
       },
       {
@@ -713,7 +683,7 @@
         "title": "Vale Canada Limited Vale Canada Limitee - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 13, 2026 (41 days remaining)",
+        "deadline": "September 13, 2026 (40 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0805"
       },
       {
@@ -721,7 +691,7 @@
         "title": "Dryden Gold Corp. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 29, 2026 (26 days remaining)",
+        "deadline": "August 29, 2026 (25 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0809"
       },
       {
@@ -729,7 +699,7 @@
         "title": "Bend All Automotive ULC - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 12, 2026 (40 days remaining)",
+        "deadline": "September 12, 2026 (39 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0800"
       },
       {
@@ -737,7 +707,7 @@
         "title": "TEESWATER CONCRETE LTD. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 12, 2026 (40 days remaining)",
+        "deadline": "September 12, 2026 (39 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0804"
       },
       {
@@ -745,7 +715,7 @@
         "title": "Delta Resources Ltd. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0677"
       },
       {
@@ -753,7 +723,7 @@
         "title": "PELEE ACRES INC. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 12, 2026 (40 days remaining)",
+        "deadline": "September 12, 2026 (39 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0764"
       },
       {
@@ -761,7 +731,7 @@
         "title": "BLUE SPRING TROUT FARMS LTD - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0799"
       },
       {
@@ -769,7 +739,7 @@
         "title": "2442259 Ontario Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 12, 2026 (40 days remaining)",
+        "deadline": "September 12, 2026 (39 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0798"
       },
       {
@@ -777,7 +747,7 @@
         "title": "2023793 Ontario Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 12, 2026 (40 days remaining)",
+        "deadline": "September 12, 2026 (39 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0791"
       },
       {
@@ -785,7 +755,7 @@
         "title": "FIRST QUANTUM MINERALS LTD - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0797"
       },
       {
@@ -793,7 +763,7 @@
         "title": "Algoma Tubes Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 12, 2026 (40 days remaining)",
+        "deadline": "September 12, 2026 (39 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0796"
       },
       {
@@ -801,7 +771,7 @@
         "title": "Gay Lea Foods Co-operative Limited - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 12, 2026 (40 days remaining)",
+        "deadline": "September 12, 2026 (39 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0790"
       },
       {
@@ -809,7 +779,7 @@
         "title": "PROJECT NIKOLAS COMPANY INC. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 26, 2026 (23 days remaining)",
+        "deadline": "August 26, 2026 (22 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0794"
       },
       {
@@ -817,7 +787,7 @@
         "title": "Discovery Kidd Creek Inc. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 26, 2026 (23 days remaining)",
+        "deadline": "August 26, 2026 (22 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0785"
       },
       {
@@ -825,7 +795,7 @@
         "title": "Forest City National Golf Club Inc. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 26, 2026 (23 days remaining)",
+        "deadline": "August 26, 2026 (22 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0784"
       },
       {
@@ -833,7 +803,7 @@
         "title": "Polycorp Ltd. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 10, 2026 (38 days remaining)",
+        "deadline": "September 10, 2026 (37 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0776"
       },
       {
@@ -841,7 +811,7 @@
         "title": "City of Kitchener - Approval of a municipality’s official plan",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 26, 2026 (23 days remaining)",
+        "deadline": "August 26, 2026 (22 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0780"
       },
       {
@@ -849,7 +819,7 @@
         "title": "Brand X Materials & Supply Inc. - Issuance of a licence to remove over 20,000 tonnes of aggregate annually from a pit or a quarry",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 25, 2026 (53 days remaining)",
+        "deadline": "September 25, 2026 (52 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0759"
       },
       {
@@ -857,7 +827,7 @@
         "title": "MARTINREA AUTOMOTIVE INC. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 10, 2026 (38 days remaining)",
+        "deadline": "September 10, 2026 (37 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0788"
       },
       {
@@ -865,7 +835,7 @@
         "title": "HYDRO ONE NETWORKS INC - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 10, 2026 (38 days remaining)",
+        "deadline": "September 10, 2026 (37 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0623"
       },
       {
@@ -873,7 +843,7 @@
         "title": "MARKHAM METALS LTD. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 07, 2026 (35 days remaining)",
+        "deadline": "September 07, 2026 (34 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0786"
       },
       {
@@ -881,7 +851,7 @@
         "title": "Cielo Vista Farms Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 07, 2026 (35 days remaining)",
+        "deadline": "September 07, 2026 (34 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0793"
       },
       {
@@ -889,7 +859,7 @@
         "title": "Barn Angels Composting Inc. - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 07, 2026 (35 days remaining)",
+        "deadline": "September 07, 2026 (34 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0663"
       },
       {
@@ -897,7 +867,7 @@
         "title": "CRH Canada Group Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 11, 2026 (8 days remaining)",
+        "deadline": "August 11, 2026 (7 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0626"
       },
       {
@@ -905,7 +875,7 @@
         "title": "Paletta International (2000) Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 07, 2026 (35 days remaining)",
+        "deadline": "September 07, 2026 (34 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0782"
       },
       {
@@ -913,7 +883,7 @@
         "title": "His Majesty the King in the Right of Ontario as represented by the Minister of Environment, Conservation and Parks - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 07, 2026 (35 days remaining)",
+        "deadline": "September 07, 2026 (34 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0781"
       },
       {
@@ -921,7 +891,7 @@
         "title": "Douglas Bundy - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 22, 2026 (19 days remaining)",
+        "deadline": "August 22, 2026 (18 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0783"
       },
       {
@@ -929,7 +899,7 @@
         "title": "Ernest Joseph Burns & Mary Marlene Burns - New - Approval for a consent (subject to conditions) in an area where there is no official plan in place",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 22, 2026 (19 days remaining)",
+        "deadline": "August 22, 2026 (18 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0406"
       },
       {
@@ -937,7 +907,7 @@
         "title": "Mount Logan Resources - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 22, 2026 (19 days remaining)",
+        "deadline": "August 22, 2026 (18 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0779"
       },
       {
@@ -945,7 +915,7 @@
         "title": "PARKBRIDGE LIFESTYLE COMMUNITIES INC. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 21, 2026 (18 days remaining)",
+        "deadline": "August 21, 2026 (17 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0771"
       },
       {
@@ -953,7 +923,7 @@
         "title": "Discovery Kidd Creek Inc. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 21, 2026 (18 days remaining)",
+        "deadline": "August 21, 2026 (17 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0774"
       },
       {
@@ -961,7 +931,7 @@
         "title": "Brent Clark - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 21, 2026 (18 days remaining)",
+        "deadline": "August 21, 2026 (17 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0778"
       },
       {
@@ -969,7 +939,7 @@
         "title": "Walker Aggregates Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 05, 2026 (33 days remaining)",
+        "deadline": "September 05, 2026 (32 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0772"
       },
       {
@@ -977,7 +947,7 @@
         "title": "Goulet Septic Pumping and Design Ltd. - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 05, 2026 (33 days remaining)",
+        "deadline": "September 05, 2026 (32 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0765"
       },
       {
@@ -985,7 +955,7 @@
         "title": "FS Orillia GP Inc. - Certificate of property use",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 05, 2026 (33 days remaining)",
+        "deadline": "September 05, 2026 (32 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0760"
       },
       {
@@ -993,7 +963,7 @@
         "title": "Township of Pickle Lake - Approval of a municipality’s official plan",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 21, 2026 (18 days remaining)",
+        "deadline": "August 21, 2026 (17 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0711"
       },
       {
@@ -1001,7 +971,7 @@
         "title": "Village of Sundridge - Approval of a municipality’s official plan",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 21, 2026 (18 days remaining)",
+        "deadline": "August 21, 2026 (17 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0714"
       },
       {
@@ -1009,7 +979,7 @@
         "title": "693316 Ontario Limited - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 20, 2026 (17 days remaining)",
+        "deadline": "August 20, 2026 (16 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0766"
       },
       {
@@ -1017,7 +987,7 @@
         "title": "J. Corsi Developments Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 04, 2026 (32 days remaining)",
+        "deadline": "September 04, 2026 (31 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0732"
       },
       {
@@ -1025,7 +995,7 @@
         "title": "EHC Canada, Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 03, 2026 (31 days remaining)",
+        "deadline": "September 03, 2026 (30 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0756"
       },
       {
@@ -1033,7 +1003,7 @@
         "title": "Provincial priority request for a Minister’s Zoning Order for a Transit-Oriented Community (Distillery District (formerly Corktown) – South Site) in the City of Toronto",
         "department": "Government of Ontario",
         "summary": "Regulation",
-        "deadline": "August 19, 2026 (16 days remaining)",
+        "deadline": "August 19, 2026 (15 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0767"
       },
       {
@@ -1041,7 +1011,7 @@
         "title": "Provincial priority request for a Minister’s Zoning Order for a Transit-Oriented Community (Distillery District (formerly Corktown) – North Site) in the City of Toronto",
         "department": "Government of Ontario",
         "summary": "Regulation",
-        "deadline": "August 19, 2026 (16 days remaining)",
+        "deadline": "August 19, 2026 (15 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0769"
       },
       {
@@ -1049,7 +1019,7 @@
         "title": "Camp Horizon Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 03, 2026 (31 days remaining)",
+        "deadline": "September 03, 2026 (30 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0758"
       },
       {
@@ -1057,7 +1027,7 @@
         "title": "Greenstone Gold Mines GP Inc. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 19, 2026 (16 days remaining)",
+        "deadline": "August 19, 2026 (15 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0763"
       },
       {
@@ -1065,7 +1035,7 @@
         "title": "Greenstone Gold Mines GP Inc. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 19, 2026 (16 days remaining)",
+        "deadline": "August 19, 2026 (15 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0762"
       },
       {
@@ -1073,7 +1043,7 @@
         "title": "Walker Aggregates Inc. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 19, 2026 (16 days remaining)",
+        "deadline": "August 19, 2026 (15 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0757"
       },
       {
@@ -1081,7 +1051,7 @@
         "title": "Woodbridge Thermopanel Solutions Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "September 03, 2026 (31 days remaining)",
+        "deadline": "September 03, 2026 (30 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0755"
       },
       {
@@ -1089,7 +1059,7 @@
         "title": "Technical Bulletin: Approaches for Assessing Emissions from Continuous & Drop Operations",
         "department": "Government of Ontario",
         "summary": "Policy",
-        "deadline": "August 31, 2026 (28 days remaining)",
+        "deadline": "August 31, 2026 (27 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0748"
       },
       {
@@ -1097,7 +1067,7 @@
         "title": "Lexam VG Gold Inc. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 16, 2026 (13 days remaining)",
+        "deadline": "August 16, 2026 (12 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0752"
       },
       {
@@ -1105,7 +1075,7 @@
         "title": "Onbelay Automotive Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0753"
       },
       {
@@ -1113,7 +1083,7 @@
         "title": "Greenwich Windfarm GP Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0734"
       },
       {
@@ -1121,7 +1091,7 @@
         "title": "LES ENTREPRISES H.D.J.S. GASCON LIMITEE/ LIMITED - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0754"
       },
       {
@@ -1129,7 +1099,7 @@
         "title": "The Ministry of Agriculture, Food and Agribusiness is proposing amendments to the Agricultural Tile Drainage Installation Act, (Act) and Regulation 18 to modernize permits and licences.",
         "department": "Government of Ontario",
         "summary": "Act",
-        "deadline": "August 31, 2026 (28 days remaining)",
+        "deadline": "August 31, 2026 (27 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0680"
       },
       {
@@ -1137,7 +1107,7 @@
         "title": "GFL Environmental Services Inc. - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0747"
       },
       {
@@ -1145,7 +1115,7 @@
         "title": "MacGregor Concrete Products (Beachburg) Limited - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0746"
       },
       {
@@ -1153,7 +1123,7 @@
         "title": "Dana Canada Corporation/Corporation Dana Canada - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 30, 2026 (27 days remaining)",
+        "deadline": "August 30, 2026 (26 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0749"
       },
       {
@@ -1161,7 +1131,7 @@
         "title": "Robert Baily 2681891 Ontario Incorporated - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 14, 2026 (11 days remaining)",
+        "deadline": "August 14, 2026 (10 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0733"
       },
       {
@@ -1169,7 +1139,7 @@
         "title": "VITACORE INDUSTRIES INC. - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 29, 2026 (26 days remaining)",
+        "deadline": "August 29, 2026 (25 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0750"
       },
       {
@@ -1177,7 +1147,7 @@
         "title": "Clean Harbors Canada Inc. - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 29, 2026 (26 days remaining)",
+        "deadline": "August 29, 2026 (25 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0736"
       },
       {
@@ -1185,7 +1155,7 @@
         "title": "511414 Ontario Limited - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 29, 2026 (26 days remaining)",
+        "deadline": "August 29, 2026 (25 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0745"
       },
       {
@@ -1193,7 +1163,7 @@
         "title": "Consultation on Reducing Regulatory Burden in Ontario's Building Code",
         "department": "Government of Ontario",
         "summary": "Policy",
-        "deadline": "August 14, 2026 (11 days remaining)",
+        "deadline": "August 14, 2026 (10 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0744"
       },
       {
@@ -1201,7 +1171,7 @@
         "title": "Richard Charles Korpela - New - Approval for a consent (subject to conditions) in an area where there is no official plan in place",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 14, 2026 (11 days remaining)",
+        "deadline": "August 14, 2026 (10 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0556"
       },
       {
@@ -1209,7 +1179,7 @@
         "title": "Richard Charles Korpela - New - Approval for a consent (subject to conditions) in an area where there is no official plan in place",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 14, 2026 (11 days remaining)",
+        "deadline": "August 14, 2026 (10 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0555"
       },
       {
@@ -1217,7 +1187,7 @@
         "title": "Maratek Environmental Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 29, 2026 (26 days remaining)",
+        "deadline": "August 29, 2026 (25 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0741"
       },
       {
@@ -1225,7 +1195,7 @@
         "title": "1000906160 ONTARIO INC. operating as FRONTENAC SEPTIC SERVICE - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0724"
       },
       {
@@ -1233,7 +1203,7 @@
         "title": "Recochem Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0731"
       },
       {
@@ -1241,7 +1211,7 @@
         "title": "Harmony Creek Golf Centre Ltd. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 13, 2026 (10 days remaining)",
+        "deadline": "August 13, 2026 (9 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0729"
       },
       {
@@ -1249,7 +1219,7 @@
         "title": "Wallenstein Feed & Supply Ltd. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0730"
       },
       {
@@ -1257,7 +1227,7 @@
         "title": "Royal Automotive Group Ltd. operating as Rollstar Metal Forming - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0718"
       },
       {
@@ -1265,7 +1235,7 @@
         "title": "Niagara Region Agricultural Society - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0720"
       },
       {
@@ -1273,7 +1243,7 @@
         "title": "HK Travel Centres GP Inc. as general partner for and on behalf of HK Travel Centres L.P. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 13, 2026 (10 days remaining)",
+        "deadline": "August 13, 2026 (9 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0735"
       },
       {
@@ -1281,7 +1251,7 @@
         "title": "TANGLE CREEK GOLF & COUNTRY CLUB INC. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 13, 2026 (10 days remaining)",
+        "deadline": "August 13, 2026 (9 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0726"
       },
       {
@@ -1289,7 +1259,7 @@
         "title": "Camphill Communities Ontario Inc. - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0737"
       },
       {
@@ -1297,7 +1267,7 @@
         "title": "St. Clair Region Conservation Authority - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 28, 2026 (25 days remaining)",
+        "deadline": "August 28, 2026 (24 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0738"
       },
       {
@@ -1305,7 +1275,7 @@
         "title": "GIP Properties Inc. - Changes to the site plan for a pit or quarry",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 12, 2026 (9 days remaining)",
+        "deadline": "August 12, 2026 (8 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0723"
       },
       {
@@ -1313,7 +1283,7 @@
         "title": "ATURA HYDROGEN INC as general partner and on behalf of ATURA H2 LP - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 24, 2026 (21 days remaining)",
+        "deadline": "August 24, 2026 (20 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0649"
       },
       {
@@ -1321,7 +1291,7 @@
         "title": "Sherwin-Williams Canada Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 24, 2026 (21 days remaining)",
+        "deadline": "August 24, 2026 (20 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0695"
       },
       {
@@ -1329,7 +1299,7 @@
         "title": "BULAT READY MIX CONCRETE LTD. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 24, 2026 (21 days remaining)",
+        "deadline": "August 24, 2026 (20 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0705"
       },
       {
@@ -1337,7 +1307,7 @@
         "title": "Safety-Kleen Canada Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 24, 2026 (21 days remaining)",
+        "deadline": "August 24, 2026 (20 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0727"
       },
       {
@@ -1345,7 +1315,7 @@
         "title": "10173169 CANADA LIMITED - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 24, 2026 (21 days remaining)",
+        "deadline": "August 24, 2026 (20 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0725"
       },
       {
@@ -1353,7 +1323,7 @@
         "title": "Revoking the Class Environmental Assessment for Resource Stewardship and Facility Development Projects",
         "department": "Government of Ontario",
         "summary": "Regulation",
-        "deadline": "August 24, 2026 (21 days remaining)",
+        "deadline": "August 24, 2026 (20 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0563"
       },
       {
@@ -1361,7 +1331,7 @@
         "title": "Proposing a Project Evaluation Policy that would replace the Class Environmental Assessment for Ministry of Natural Resources Resource Stewardship and Facility Development Projects",
         "department": "Government of Ontario",
         "summary": "Policy",
-        "deadline": "August 24, 2026 (21 days remaining)",
+        "deadline": "August 24, 2026 (20 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0089"
       },
       {
@@ -1369,7 +1339,7 @@
         "title": "CANADA (INTERNATIONAL) CHUANREN INVESTMENT(HOLDINGS) LTD. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 09, 2026 (6 days remaining)",
+        "deadline": "August 09, 2026 (5 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0715"
       },
       {
@@ -1377,7 +1347,7 @@
         "title": "SMUGGLER'S GLEN GOLF COURSE LTD. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 09, 2026 (6 days remaining)",
+        "deadline": "August 09, 2026 (5 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0712"
       },
       {
@@ -1385,7 +1355,7 @@
         "title": "HK Travel Centres GP Inc. as general partner for and on behalf of HK Travel Centres L.P. - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 09, 2026 (6 days remaining)",
+        "deadline": "August 09, 2026 (5 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0699"
       },
       {
@@ -1393,7 +1363,7 @@
         "title": "Town of Milton - Approval of a municipality’s official plan",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 08, 2026 (5 days remaining)",
+        "deadline": "August 08, 2026 (4 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0728"
       },
       {
@@ -1401,7 +1371,7 @@
         "title": "Stubbe's Aggregates Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 23, 2026 (20 days remaining)",
+        "deadline": "August 23, 2026 (19 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0707"
       },
       {
@@ -1409,7 +1379,7 @@
         "title": "Gazzola Paving Limited - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 23, 2026 (20 days remaining)",
+        "deadline": "August 23, 2026 (19 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0702"
       },
       {
@@ -1417,7 +1387,7 @@
         "title": "Southwest United Canada, Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 23, 2026 (20 days remaining)",
+        "deadline": "August 23, 2026 (19 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0719"
       },
       {
@@ -1425,7 +1395,7 @@
         "title": "Paradigm Orillia Technology Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 23, 2026 (20 days remaining)",
+        "deadline": "August 23, 2026 (19 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0717"
       },
       {
@@ -1433,7 +1403,7 @@
         "title": "Reflections RV Park Owners Association - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 23, 2026 (20 days remaining)",
+        "deadline": "August 23, 2026 (19 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0708"
       },
       {
@@ -1441,7 +1411,7 @@
         "title": "ONTARIO NORTHLAND TRANSPORTATION COMMISSION - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 23, 2026 (20 days remaining)",
+        "deadline": "August 23, 2026 (19 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0710"
       },
       {
@@ -1449,7 +1419,7 @@
         "title": "Michael Hay & Chelsea Gauthier - New - Approval for a consent (subject to conditions) in an area where there is no official plan in place",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 08, 2026 (5 days remaining)",
+        "deadline": "August 08, 2026 (4 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0418"
       },
       {
@@ -1457,7 +1427,7 @@
         "title": "Root Lake Resources - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 07, 2026 (4 days remaining)",
+        "deadline": "August 07, 2026 (3 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0722"
       },
       {
@@ -1465,7 +1435,7 @@
         "title": "Gold Canyon Resources Inc. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 07, 2026 (4 days remaining)",
+        "deadline": "August 07, 2026 (3 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0721"
       },
       {
@@ -1473,7 +1443,7 @@
         "title": "Blunt Logging Inc. - Licence for a forest resource processing facility",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 07, 2026 (4 days remaining)",
+        "deadline": "August 07, 2026 (3 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0401"
       },
       {
@@ -1481,7 +1451,7 @@
         "title": "Review of Ontario’s Municipal Energy Plan Grant Program",
         "department": "Government of Ontario",
         "summary": "Policy",
-        "deadline": "August 22, 2026 (19 days remaining)",
+        "deadline": "August 22, 2026 (18 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0716"
       },
       {
@@ -1489,7 +1459,7 @@
         "title": "First Class Metals Canada Inc. - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 06, 2026 (3 days remaining)",
+        "deadline": "August 06, 2026 (2 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0704"
       },
       {
@@ -1497,7 +1467,7 @@
         "title": "Perry English - Mineral exploration permit",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 06, 2026 (3 days remaining)",
+        "deadline": "August 06, 2026 (2 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0706"
       },
       {
@@ -1505,7 +1475,7 @@
         "title": "Minaki on the River Inc. - New - Approval for a consent (subject to conditions) in an area where there is no official plan in place",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 05, 2026 (2 days remaining)",
+        "deadline": "August 05, 2026 (1 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0615"
       },
       {
@@ -1513,7 +1483,7 @@
         "title": "WALKER RNG INC. - Environmental Compliance Approval (waste)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 20, 2026 (17 days remaining)",
+        "deadline": "August 20, 2026 (16 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0703"
       },
       {
@@ -1521,7 +1491,7 @@
         "title": "Topcoat Finish Inc. - Environmental Compliance Approval (air)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 20, 2026 (17 days remaining)",
+        "deadline": "August 20, 2026 (16 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0701"
       },
       {
@@ -1529,7 +1499,7 @@
         "title": "Vale Canada Limited/Vale Canada Limitée - Permit to take water",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 05, 2026 (2 days remaining)",
+        "deadline": "August 05, 2026 (1 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0690"
       },
       {
@@ -1537,7 +1507,7 @@
         "title": "​​Amendment to the Pinery Provincial Park Management Plan​",
         "department": "Government of Ontario",
         "summary": "Policy",
-        "deadline": "August 17, 2026 (14 days remaining)",
+        "deadline": "August 17, 2026 (13 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0675"
       },
       {
@@ -1545,7 +1515,7 @@
         "title": "Parrish & Heimbecker, Limited operating as New-Life Mills - Environmental Compliance Approval (sewage)",
         "department": "Government of Ontario",
         "summary": "",
-        "deadline": "August 16, 2026 (13 days remaining)",
+        "deadline": "August 16, 2026 (12 days remaining)",
         "url": "https://ero.ontario.ca/notice/026-0691"
       }
     ],
@@ -1557,7 +1527,7 @@
         "summary": "We are consulting on making consumer protections clearer and more consistent for Canadians across their Internet, cellphone, home phone and television services.",
         "deadline": "August 11, 2026 (34 days remaining)",
         "url": "https://www.crtc.gc.ca/eng/consultation/harmoni.htm",
-        "_urgency": "soon",
+        "_urgency": "urgent",
         "_key": "CRTC — Consultations|Making consumer protections clearer for Canadians",
         "_is_new": false,
         "_broken": false
